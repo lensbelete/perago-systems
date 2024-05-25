@@ -77,9 +77,11 @@ const ContactUs = () => {
               mt="sm"
               style={{ fontWeight: "normal", fontSize: "1.1rem" }}
             >
-              +251(114)701998
+                <a href="tel:+251(114)701998">+251(114)701998</a>
+              
               <br />
-              +251-911-231622
+              <a href="tel:+251-911-231622">+251-911-231622</a>
+              
             </Text>
           </Card>
           <Card
@@ -105,7 +107,8 @@ const ContactUs = () => {
               mt="sm"
               style={{ fontWeight: "normal", fontSize: "1.1rem" }}
             >
-              Info@peragosystems.com
+                <a href="mailto:email@example.com">Info@peragosystems.com</a>
+              
             </Text>
           </Card>
         </div>
