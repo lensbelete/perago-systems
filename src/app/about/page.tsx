@@ -37,6 +37,49 @@ const AboutUs = () => {
           professional standards.
         </p>
       </div>
+
+      <div className="w-full bg-white py-14">
+        <h2 className="text-4xl text-green-600 mb-2 text-center">
+          Why Perago?
+        </h2>
+        <h3 className="text-2xl text-green-600 mb-8 text-center">
+          Reasons to choose us
+        </h3>
+        <div className="flex flex-wrap justify-center gap-8 px-6">
+          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+            <h4 className="text-xl text-green-600 mb-2">
+              Diversified Experience in Software Engineering
+            </h4>
+            <hr className="border-gray-300 mb-4" />
+            <p className="text-gray-600 text-sm leading-relaxed">
+              We have hands on consulting and implementation experiences in
+              software development, system analysis, and software quality
+              assurance at national and regional levels.
+            </p>
+          </div>
+          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+            <h4 className="text-xl text-green-600 mb-2">Qualified Staff</h4>
+            <hr className="border-gray-300 mb-4" />
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Perago houses internationally certified professionals among the
+              few ones in the industry. This highly dedicated and committed
+              staff are the cornerstones for providing quality products and
+              services to our customers. We also engage subject matter experts
+              to make sure we understand every bit of our customers’ business
+              processes.
+            </p>
+          </div>
+          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+            <h4 className="text-xl text-green-600 mb-2">Customer Focus</h4>
+            <hr className="border-gray-300 mb-4" />
+            <p className="text-gray-600 text-sm leading-relaxed">
+              We foster close relationships, rooted in trust and respect, with
+              our customers, and face together the everyday challenge of tying
+              the evolving information technology with their business goals.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
