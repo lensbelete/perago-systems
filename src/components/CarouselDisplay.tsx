@@ -9,7 +9,7 @@ import heroImage5 from"../assets/hero5.jpg";
 import heroImage6 from"../assets/hero6.jpg";
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import { rem } from '@mantine/core';
-import { AutoplayOptionsType } from 'embla-carousel-autoplay';
+
 
 
 
