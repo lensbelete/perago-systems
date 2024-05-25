@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import '@mantine/core/styles.css';
-
+import '@mantine/carousel/styles.css';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import "./globals.css";
+import Shell from "@/components/AppShell";
 
 
 export const metadata: Metadata = {
@@ -20,7 +21,12 @@ export default function RootLayout({
        <head>
         <ColorSchemeScript />
       </head>
-      <body ><MantineProvider>{children}</MantineProvider></body>
+      <body className="bg-white">
+        <MantineProvider>
+          <Shell>{children}</Shell>
+        
+        </MantineProvider>
+      </body>
     </html>
   );
 }
