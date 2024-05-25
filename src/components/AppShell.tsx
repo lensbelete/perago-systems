@@ -3,6 +3,7 @@ import { AppShell, NavLink, Flex } from '@mantine/core';
 import Image from 'next/image';
 import { IconGauge, IconHome, IconSettings, IconCalendar,IconMail} from '@tabler/icons-react';
 import peragoImage from "../assets/perago2.png"
+import peragoImage2 from "../assets/perago-white.png"
 
 
 const Shell = ({children}) => {
@@ -19,12 +20,15 @@ const Shell = ({children}) => {
 
         <div className='flex w-screen'>
           <div className='ml-10 mt-4 mr-10'>
-          <Image
-          width="120"
-          height={31}
+          <a href='/'>
+            <Image
+            width="120"
+            height={31}
 
-            alt='something'
-            src={peragoImage}/>
+              alt='Perago logo'
+              src={peragoImage}/>
+          </a>
+        
 
           </div>
          
@@ -69,16 +73,38 @@ const Shell = ({children}) => {
     <AppShell.Main className='pl-0 pr-0 pt-16'>
       {children}
     </AppShell.Main>
-    <AppShell.Footer className='relative'>
-      <div>
-        <h1>Perago</h1>
-        <div>
+    <AppShell.Footer className='relative bg-green-600 h-[25%] ' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
+      <div className='flex-row justify-center pb-5 bold'>
+        <div className='flex justify-center'>
+          <Image
+          alt='perago logo'
+          src={peragoImage2}
+          className='h-[20%] w-[20%] p-5'
+          />
+        </div>
+       
+        <div className="flex flex-row flex-wrap justify-center items-center">
+          <div className="flex w-full md:w-1/3 justify-center">
           <p>Email: info@peragoSystems.com</p>
-          <p>Tel: +251 114 701 998 | +251 911 231 622</p>
+          </div>
+          <div className="w-full flex md:w-1/3 justify-center">
+            <div>
+            <p className='text-center'>Perago Information Systems</p>
+            <p>Tel: +251 114 701 998 | +251 911 231 622</p>
+
+            </div>
+            
+          </div>
+          <div className="flex justify-center w-full md:w-1/3">
           <p>
           Po.Box: 139 Addis Ababa, Ethiopia
           </p>
+    
+          </div>
         </div>
+         
+         
+         
 
       </div>
       <div>
