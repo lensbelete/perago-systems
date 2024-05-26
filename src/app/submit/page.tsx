@@ -1,28 +1,20 @@
 "use client";
 import React from "react";
 import { Card, Container, Image, Text, Group, Button } from "@mantine/core";
-import successIcon from "../../assets/success.png";
+
+import { IconCircleCheck } from "@tabler/icons-react";
 
 const SubmitPage = () => {
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        backgroundColor: "#fff",
-      }}
+    className="flex justify-center py-10"
     >
-      <Card shadow="sm" padding="lg" radius="md" style={{ width: 600 }}>
+      <Card shadow="sm" padding="lg" radius="md" style={{ width: "50%" }}>
         <Container style={{ textAlign: "center" }}>
-          <Image
-            src={successIcon}
-            alt=""
-            width={64}
-            height={64}
-            style={{ margin: "0 auto", display: "block" }}
-          />
+          <div className="flex justify-center">
+          <IconCircleCheck size={100} color="green" stroke={2}/>
+          </div>
+          
           <Text
             mt="sm"
             size="xl"
@@ -35,20 +27,26 @@ const SubmitPage = () => {
           </Text>
         </Container>
         <hr className="border-gray-300 w-full" />
-        <Group position="apart" mt="lg" align="center">
-          <Text size="sm" style={{ color: "blue" }}>
-            Now create your own Jotform - It’s free!
-          </Text>
-          <Button
-            style={{
-              backgroundColor: "#4CAF50",
-              color: "white",
-              marginLeft: "auto",
-            }}
-            onClick={() => (window.location.href = "https://www.jotform.com")}
-          >
-            Create your own Jotform
-          </Button>
+
+        <Group mt="lg" align="center" className="flex ">
+          <div className="flex justify-start">
+            <Text size="sm" >
+              Now create your own Jotform - It’s free!
+            </Text>
+          </div>
+
+          <div className="flex justify-end ml-auto">
+            <Button
+            color="green"
+              
+              onClick={() => (window.location.href = "https://www.jotform.com")}
+            >
+              Create your own Jotform
+            </Button>
+
+          </div>
+          
+         
         </Group>
       </Card>
     </div>
