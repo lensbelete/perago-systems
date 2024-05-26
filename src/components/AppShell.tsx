@@ -127,7 +127,7 @@ const Shell = ({ children }) => {
           onClick={close}
         />
         <NavLink
-          href="/"
+          href="/service"
           label="Services"
           color='gray'
           leftSection={<IconSettings size="1rem" stroke={1.5} />}
