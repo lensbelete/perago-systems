@@ -10,14 +10,14 @@ const AboutUs = () => {
       </Title>
 
       <div className="w-full flex justify-center mb-1">
-        <Image src={peragoLogo} alt="Perago logo" />
+        <Image src={peragoLogo} alt="perago logo for about page" />
       </div>
       <div className="px-14  bg-gray-100">
         <Title order={3} mb="sm" style={{ color: "green" }} className="pt-6">
           Who We Are
         </Title>
         <hr className="border-gray-300 w-full mb-6" />
-        <p className="text-gray-600 text-sm leading-relaxed mb-4 text-justify">
+        <p className="text-gray-600  leading-relaxed mb-4 text-lg">
           <span className="text-gray-600 font-bold">
             Perago Information Systems PLC
           </span>{" "}
@@ -30,7 +30,7 @@ const AboutUs = () => {
           solutions; research and training services; E-governance enablement;
           ICT consulting; and capacity building, in Ethiopia and beyond.
         </p>
-        <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
+        <p className="text-gray-600  leading-relaxed mb-8 text-lg">
           Perago is established by highly qualified and experienced
           professionals in management, economics, business administration,
           software engineering, and information systems management; and it also
@@ -70,7 +70,7 @@ const AboutUs = () => {
           justify={{ sm: "center" }}
           className="p-5"
         >
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -81,13 +81,13 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-lg">
               We have hands on consulting and implementation experiences in
               software development, system analysis, and software quality
               assurance at national and regional levels.
             </p>
           </div>
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -98,7 +98,7 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               Perago houses internationally certified professionals among the
               few ones in the industry. This highly dedicated and committed
               staff are the cornerstones for providing quality products and
@@ -107,7 +107,7 @@ const AboutUs = () => {
               processes.
             </p>
           </div>
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -118,7 +118,7 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               We foster close relationships, rooted in trust and respect, with
               our customers, and face together the everyday challenge of tying
               the evolving information technology with their business goals.
@@ -132,7 +132,7 @@ const AboutUs = () => {
           justify={{ sm: "center" }}
           className="p-5"
         >
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -143,14 +143,14 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               We strive to understand our customers’ business, user,
               operational, and system requirements before designing solutions.
               Perago is very agile in addressing business process changes during
               project periods.
             </p>
           </div>
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -161,13 +161,13 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               we engage all stakeholders in every phase of our project life
               cycle in order to get the confidence of users and to ensure the
               solutions are put into service.
             </p>
           </div>
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -178,7 +178,7 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               Perago houses internationally certified professionals among the
               few ones in the industry. This highly dedicated and committed
               staffs are the cornerstones for providing quality products and
@@ -195,7 +195,7 @@ const AboutUs = () => {
           justify={{ sm: "center" }}
           className="p-5"
         >
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -206,13 +206,13 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               Fast adaptation of new technologies is the core of our business
               strategy. We help our customers embrace the benefits of technology
               to realize their business goals.
             </p>
           </div>
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -223,14 +223,14 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               We always work in close partnership with our customers from
               requirement understanding to solution delivery. During all the
               phases we make sure that we able to impart our knowledge to
               customers.
             </p>
           </div>
-          <div className="flex-1 max-w-sm p-6 bg-gray-50 rounded-lg shadow">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -241,7 +241,7 @@ const AboutUs = () => {
             </Title>
 
             <hr className="border-gray-300 mb-4" />
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               To ensure long term successes, a high standing and solid
               reputation in the marketplace are required. It is therefore a
               Perago standard to deliver high quality products and services

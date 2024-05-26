@@ -99,7 +99,7 @@ const Shell = ({ children }) => {
             <Burger
               opened={opened}
               onClick={toggle}
-              className="md:hidden ml-auto mr-4"
+              className="md:hidden ml-auto mr-7"
               size="sm"
               left={0}
               color="#55ba4a"
