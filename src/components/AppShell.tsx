@@ -111,14 +111,14 @@ const Shell = ({ children }) => {
         </AppShell.Main>
         <AppShell.Footer className='relative bg-green-600 h-[30%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
           <div className='flex-row justify-center pb-5 font-bold'>
-            <div className='flex justify-center'>
+            <div className='justify-center hidden sm:flex'>
               <Image
                 alt='perago logo'
                 src={peragoImage2}
                 className='h-[20%] w-[20%] p-5'
               />
             </div>
-            <div>
+            <div className='py-3'>
             <Text className='text-center'>Perago Information Systems</Text>
             </div>
             <div className="flex flex-row flex-wrap justify-center items-center">
