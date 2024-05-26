@@ -144,7 +144,8 @@ export default function Home() {
               </p>
 
                 <Group>
-                  <Button color="gray" >View Details</Button>
+                  <a href="/eProcure"><Button color="gray" >View Details</Button></a>
+                  
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
            </Box>
