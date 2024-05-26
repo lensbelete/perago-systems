@@ -278,20 +278,21 @@ const RequestDemo = () => {
                 </Popover>
               </Group>
               <Box mt="xl">
-                <Button
-                  type="submit"
-                  styles={{
-                    root: {
-                      backgroundColor: "#66a366",
-                      color: "white",
-                      "&:hover": {
-                        backgroundColor: "#76c776",
+                <a href="/submit" style={{ textDecoration: "none" }}>
+                  <Button
+                    styles={{
+                      root: {
+                        backgroundColor: "#66a366",
+                        color: "white",
+                        "&:hover": {
+                          backgroundColor: "#76c776",
+                        },
                       },
-                    },
-                  }}
-                >
-                  Submit
-                </Button>
+                    }}
+                  >
+                    Submit
+                  </Button>
+                </a>
               </Box>
             </form>
           </Card>
