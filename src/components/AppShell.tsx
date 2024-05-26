@@ -106,7 +106,7 @@ const Shell = ({ children }) => {
             />
           </div>
         </AppShell.Header>
-        <AppShell.Main className='pl-0 pr-0 pt-16'>
+        <AppShell.Main className='pl-0 pr-0 pt-20'>
           {children}
         </AppShell.Main>
         <AppShell.Footer className='relative bg-green-600 h-[30%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>

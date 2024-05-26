@@ -7,13 +7,14 @@ import {
   Title,
   Group,
   Button,
-  Text,
+
   Box,
-  Popover,
+
   Textarea,
   Card,
 } from "@mantine/core";
-import { IconAlertCircle } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
+
 
 const RequestDemo = () => {
   const form = useForm({
@@ -40,6 +41,14 @@ const RequestDemo = () => {
         value.length === 0 ? "This field is required" : null,
     },
   });
+  const router = useRouter();
+
+
+  const handleSubmit = async (values: any) => {
+    
+    console.log(values);
+    router.push('/successful');
+  };
 
   return (
     <div
@@ -58,21 +67,12 @@ const RequestDemo = () => {
           style={{ backgroundColor: "#f0f0f0", padding: "60px" }}
         >
           <Card shadow="sm" padding="lg" radius="md" withBorder>
-            <Title align="center" mb="xl">
+            <Title  mb="xl">
               Request Demo
             </Title>
-            <form onSubmit={form.onSubmit((values) => console.log(values))}>
-              <Group direction="column" mt="lg" mb="xl">
-                <Popover
-                  opened={!!form.errors.fullName}
-                  position="bottom"
-                  withArrow
-                  trapFocus={false}
-                  transition="pop-top-left"
-                  width="target"
-                  styles={{ popover: { backgroundColor: "red" } }}
-                >
-                  <Popover.Target>
+            <form onSubmit={form.onSubmit(handleSubmit)}>
+              <Group  mt="lg" mb="xl">
+                
                     <TextInput
                       withAsterisk
                       label="Full Name"
@@ -87,31 +87,14 @@ const RequestDemo = () => {
                         },
                       }}
                     />
-                  </Popover.Target>
-                  <Popover.Dropdown>
-                    <Text color="white" size="sm">
-                      <IconAlertCircle
-                        size={16}
-                        stroke={1.5}
-                        style={{ verticalAlign: "middle" }}
-                      />{" "}
-                      {form.errors.fullName}
-                    </Text>
-                  </Popover.Dropdown>
-                </Popover>
+                 
+                  
+                 
               </Group>
 
-              <Group direction="column" mt="lg" mb="xl">
-                <Popover
-                  opened={!!form.errors.companyName}
-                  position="bottom"
-                  withArrow
-                  trapFocus={false}
-                  transition="pop-top-left"
-                  width="target"
-                  styles={{ popover: { backgroundColor: "red" } }}
-                >
-                  <Popover.Target>
+              <Group mt="lg" mb="xl">
+               
+                  
                     <TextInput
                       withAsterisk
                       label="Company Name"
@@ -120,37 +103,15 @@ const RequestDemo = () => {
                       styles={{
                         input: {
                           backgroundColor: form.errors.companyName
-                            ? "#ffffe0"
+                            ? "#ffe4e4"
                             : "transparent",
                           width: "300px",
                         },
                       }}
-                    />
-                  </Popover.Target>
-                  <Popover.Dropdown>
-                    <Text color="white" size="sm">
-                      <IconAlertCircle
-                        size={16}
-                        stroke={1.5}
-                        style={{ verticalAlign: "middle" }}
-                      />{" "}
-                      {form.errors.companyName}
-                    </Text>
-                  </Popover.Dropdown>
-                </Popover>
+                    /> 
               </Group>
 
-              <Group direction="column" mt="lg" mb="xl">
-                <Popover
-                  opened={!!form.errors.email}
-                  position="bottom"
-                  withArrow
-                  trapFocus={false}
-                  transition="pop-top-left"
-                  width="target"
-                  styles={{ popover: { backgroundColor: "red" } }}
-                >
-                  <Popover.Target>
+              <Group  mt="lg" mb="xl">
                     <TextInput
                       withAsterisk
                       label="Email"
@@ -159,42 +120,20 @@ const RequestDemo = () => {
                       styles={{
                         input: {
                           backgroundColor: form.errors.email
-                            ? "#ffffe0"
+                            ? "#ffe4e4"
                             : "transparent",
                           width: "300px",
                         },
                       }}
                     />
-                  </Popover.Target>
-                  <Popover.Dropdown>
-                    <Text color="white" size="sm">
-                      <IconAlertCircle
-                        size={16}
-                        stroke={1.5}
-                        style={{ verticalAlign: "middle" }}
-                      />{" "}
-                      {form.errors.email}
-                    </Text>
-                  </Popover.Dropdown>
-                </Popover>
+                       
               </Group>
 
               <Group
-                direction="row"
                 mt="lg"
                 mb="xl"
                 style={{ alignItems: "flex-end" }}
               >
-                <Popover
-                  opened={!!form.errors.areaCode}
-                  position="bottom"
-                  withArrow
-                  trapFocus={false}
-                  transition="pop-top-left"
-                  width="target"
-                  styles={{ popover: { backgroundColor: "red" } }}
-                >
-                  <Popover.Target>
                     <TextInput
                       withAsterisk
                       label="Phone Number"
@@ -209,19 +148,8 @@ const RequestDemo = () => {
                         },
                       }}
                     />
-                  </Popover.Target>
-                  <Popover.Dropdown>
-                    <Text color="white" size="sm">
-                      <IconAlertCircle
-                        size={16}
-                        stroke={1.5}
-                        style={{ verticalAlign: "middle" }}
-                      />{" "}
-                      {form.errors.areaCode}
-                    </Text>
-                  </Popover.Dropdown>
-                </Popover>
-
+                  
+          
                 <TextInput
                   withAsterisk
                   label=""
@@ -238,17 +166,7 @@ const RequestDemo = () => {
                 />
               </Group>
 
-              <Group direction="column" mt="lg" mb="xl">
-                <Popover
-                  opened={!!form.errors.helpMessage}
-                  position="bottom"
-                  withArrow
-                  trapFocus={false}
-                  transition="pop-top-left"
-                  width="target"
-                  styles={{ popover: { backgroundColor: "red" } }}
-                >
-                  <Popover.Target>
+              <Group mt="lg" mb="xl">            
                     <Textarea
                       withAsterisk
                       label="How Can We Help You?"
@@ -264,31 +182,12 @@ const RequestDemo = () => {
                         },
                       }}
                     />
-                  </Popover.Target>
-                  <Popover.Dropdown>
-                    <Text color="white" size="sm">
-                      <IconAlertCircle
-                        size={16}
-                        stroke={1.5}
-                        style={{ verticalAlign: "middle" }}
-                      />{" "}
-                      {form.errors.helpMessage}
-                    </Text>
-                  </Popover.Dropdown>
-                </Popover>
               </Group>
+
               <Box mt="xl">
                 <Button
                   type="submit"
-                  styles={{
-                    root: {
-                      backgroundColor: "#66a366",
-                      color: "white",
-                      "&:hover": {
-                        backgroundColor: "#76c776",
-                      },
-                    },
-                  }}
+                  color="green"
                 >
                   Submit
                 </Button>
