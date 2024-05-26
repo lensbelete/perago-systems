@@ -47,7 +47,7 @@ const RequestDemo = () => {
   const handleSubmit = async (values: any) => {
     
     console.log(values);
-    router.push('/successful');
+    router.push('/submit');
   };
 
   return (
@@ -185,12 +185,12 @@ const RequestDemo = () => {
               </Group>
 
               <Box mt="xl">
-                <Button
-                  type="submit"
-                  color="green"
-                >
-                  Submit
-                </Button>
+                  <Button
+                    color="green"
+                    type="submit"
+                  >
+                    Submit
+                  </Button>
               </Box>
             </form>
           </Card>
