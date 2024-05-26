@@ -206,7 +206,8 @@ export default function Home() {
               </p>
 
                 <Group>
-                  <Button color="gray" >View Details</Button>
+                  <a href="/engage"><Button color="gray" >View Details</Button></a>
+                  
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
               
@@ -256,7 +257,8 @@ export default function Home() {
         </p>
 
           <Group>
-            <Button color="gray" >View Details</Button>
+            <a href="/measure"> <Button color="gray" >View Details</Button></a>
+           
             <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
           </Group>
       </Box>
