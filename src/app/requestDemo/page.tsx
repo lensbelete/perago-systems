@@ -52,22 +52,19 @@ const RequestDemo = () => {
 
   return (
     <div
-      style={{
-        color: "black",
-        backgroundColor: "white",
-        minHeight: "100vh",
-      }}
+     
     >
-      <Container size="sm" py="xl">
+      <Container size="md" py="xl">
         <Card
           shadow="sm"
           padding="lg"
           radius="lg"
           withBorder
-          style={{ backgroundColor: "#f0f0f0", padding: "60px" }}
+          style={{ backgroundColor: "#f0f0f0"}}
+          className="p-32"
         >
-          <Card shadow="sm" padding="lg" radius="md" withBorder>
-            <Title  mb="xl">
+          <Card shadow="sm" className="p-10" radius="md" withBorder>
+            <Title  mb="xl" className="text-center">
               Request Demo
             </Title>
             <form onSubmit={form.onSubmit(handleSubmit)}>
@@ -194,7 +191,9 @@ const RequestDemo = () => {
               </Box>
             </form>
           </Card>
+          
         </Card>
+        
       </Container>
     </div>
   );
