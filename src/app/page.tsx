@@ -25,7 +25,7 @@ export default function Home() {
           >
             Who We Are
           </Title>
-            <p className="text-justify leading-7">Perago Systems is a technology company that focuses on developing 
+            <p className="text-justify leading-7 text-lg">Perago Systems is a technology company that focuses on developing 
               and implementing electronic government and B2B commerce solutions 
               towards the provision of various online transactional services. 
               Perago provides strong technical support and knowledge transfer 
@@ -81,7 +81,7 @@ export default function Home() {
 
               </Title>
           
-              <p className="text-justify pb-8">
+              <p className="text-justify pb-8 text-lg">
                
                 The E-Services Platform is an intelligent business process management 
                 solution enabling client&apos;s to achieve paperless business transformation. 
@@ -95,10 +95,7 @@ export default function Home() {
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
 
-            </Box>
-              
-          
-            
+            </Box>      
           </Flex>
 
         </Card>
@@ -133,7 +130,7 @@ export default function Home() {
 
               </Title>
           
-              <p className="text-justify pb-8">
+              <p className="text-justify pb-8 text-lg">
                
               The E-Procurement Platform (ePROCURE) serves as a collaborative suit of 
               technology products in managing key procurement activities in acquisition of
@@ -172,8 +169,9 @@ export default function Home() {
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
-            <Box w="20%">
-              <Image    
+            <Box w="20%" >
+              <Image
+                  
                 src = {customer}
                 alt ="perago image"
                 />
@@ -195,7 +193,7 @@ export default function Home() {
 
               </Title>
           
-              <p className="text-justify pb-8">
+              <p className="text-justify pb-8 text-lg">
                
               The Customer Engagement Platform (ENGAGE) is a powerful and easy-to-use web-based 
               customer services and complaint redressal system. It serves as a communication platform 
@@ -244,7 +242,7 @@ export default function Home() {
         Managing your Key Performance Indicators to better business results.
         </Title>
     
-        <p className="text-justify pb-8">
+        <p className="text-justify pb-8 text-lg">
          
         MEASURE is a web-based performance management and productivity platform to design, plan, 
         execute, measure and manage organizational strategy by linking a vision and mission to 
@@ -309,7 +307,7 @@ export default function Home() {
         Maximize the decision-making power of your data assets.
         </Title>
     
-        <p className="text-justify pb-8">
+        <p className="text-justify pb-8 text-lg">
          
         The Data Management Platform consists of an enterprise data hub, system for data 
         inflow and outflow, databases, data marts and data warehouse as well as technology for 
@@ -359,7 +357,7 @@ export default function Home() {
 
         </Title>
     
-        <p className="text-justify pb-8">
+        <p className="text-justify pb-8 text-lg">
          
         The Online Payment Platform helps customers pay for government service fees,
          utilities, and retail purchases seamlessly by integrating it with our e-services 

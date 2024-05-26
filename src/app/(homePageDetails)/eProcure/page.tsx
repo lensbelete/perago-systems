@@ -2,8 +2,9 @@ import { Title, Text, Flex, Box } from '@mantine/core'
 import Image from 'next/image';
 import React from 'react'
 import hero from "../../../assets/hero2.jpg"
-import { IconClockHour5, IconFile, IconHeadphones, IconListNumbers, IconMessage, IconMessageDots, IconPremiumRights, IconTrendingUp, IconUsers } from '@tabler/icons-react';
-const page = () => {
+import { IconClockHour5, IconFile, IconListNumbers, IconPremiumRights} from '@tabler/icons-react';
+
+const EprocureContent = () => {
   return (
     <div>
         <Title   order={1}
@@ -98,4 +99,4 @@ const page = () => {
   )
 }
 
-export default page
+export default EprocureContent

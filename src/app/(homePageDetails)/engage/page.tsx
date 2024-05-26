@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react'
 import hero from "../../../assets/hero3.jpg"
 import { IconHeadphones, IconMessage, IconMessageDots, IconTrendingUp, IconUsers } from '@tabler/icons-react';
-const page = () => {
+const Engagepage = () => {
   return (
     <div>
         <Title   order={1}
@@ -96,4 +96,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Engagepage

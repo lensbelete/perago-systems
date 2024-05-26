@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Container, Card, Text, Title, Center } from "@mantine/core";
+import { Container, Card, Text, Title, Center, Tabs } from "@mantine/core";
 import Image from "next/image";
 import eProcureIcon from "../../assets/perago3.png";
 import eServicesIcon from "../../assets/perago4.png";
@@ -9,7 +9,7 @@ import measureIcon from "../../assets/performance.png";
 import dataManagerIcon from "../../assets/data.png";
 import ePayIcon from "../../assets/payment.png";
 
-const services = [
+const service = [
   {
     image: eProcureIcon,
     title: "ePROCURE",
@@ -44,8 +44,14 @@ const services = [
 
 const Services = () => {
   return (
-    <div style={{ backgroundColor: "white", minHeight: "100vh" }}>
+    <div>
+      
+      
+      <div style={{ backgroundColor: "white", minHeight: "100vh" }}>
+     
       <Container size="lg" py="xl">
+      
+    
         <div
           style={{
             display: "flex",
@@ -54,7 +60,7 @@ const Services = () => {
             flexWrap: "wrap",
           }}
         >
-          {services.slice(0, 3).map((service, index) => (
+          {service.slice(0, 3).map((service, index) => (
             <Card
               key={index}
               shadow="sm"
@@ -84,7 +90,7 @@ const Services = () => {
             marginTop: "24px",
           }}
         >
-          {services.slice(3, 6).map((service, index) => (
+          {service.slice(3, 6).map((service, index) => (
             <Card
               key={index}
               shadow="sm"
@@ -107,6 +113,9 @@ const Services = () => {
         </div>
       </Container>
     </div>
+
+    </div>
+    
   );
 };
 

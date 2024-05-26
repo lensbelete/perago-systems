@@ -50,7 +50,7 @@ const Shell = ({ children }) => {
                 color='gray'
               />
               <NavLink
-                href="/service"
+                href="/servicePages"
                 label="Services"
                 color='gray'
                 leftSection={<IconSettings size="1rem" stroke={1.5} />}

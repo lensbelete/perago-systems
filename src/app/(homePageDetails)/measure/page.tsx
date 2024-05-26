@@ -3,7 +3,8 @@ import Image from 'next/image';
 import React from 'react'
 import hero from "../../../assets/hero5.jpg"
 import { IconBook, IconCheck, IconEye, IconHeadphones, IconMessage, IconMessageDots, IconTrendingUp, IconUser, IconUsers } from '@tabler/icons-react';
-const page = () => {
+
+const Measurepage = () => {
   return (
     <div>
         <Title   order={1}
@@ -113,4 +114,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Measurepage

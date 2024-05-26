@@ -2,8 +2,9 @@ import { Title, Text, Flex, Box } from '@mantine/core'
 import Image from 'next/image';
 import React from 'react'
 import hero from "../../../assets/hero1.jpg"
-import { IconHeadphones, IconMessage, IconMessageDots, IconTrendingUp, IconUsers } from '@tabler/icons-react';
-const page = () => {
+import { IconHeadphones,  IconMessageDots, IconTrendingUp, IconUsers } from '@tabler/icons-react';
+
+const EservicePage = () => {
   return (
     <div>
         <Title   order={1}
@@ -104,4 +105,4 @@ const page = () => {
   )
 }
 
-export default page
+export default EservicePage
