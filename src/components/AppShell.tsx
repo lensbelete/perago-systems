@@ -62,7 +62,7 @@ const Shell = ({ children }) => {
                 leftSection={<IconCalendar size="1rem" />}
               />
               <NavLink
-                href="/"
+                href="/requestDemo"
                 label="Request Demo"
                 leftSection={<IconMail color='gray' size="1rem" stroke={1.5} />}
               />
@@ -141,7 +141,7 @@ const Shell = ({ children }) => {
           onClick={close}
         />
         <NavLink
-          href="/"
+          href="/requestDemo"
           label="Request Demo"
           leftSection={<IconMail color='gray' size="1rem" stroke={1.5} />}
           onClick={close}
