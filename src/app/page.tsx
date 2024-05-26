@@ -1,6 +1,6 @@
 "use client"
 import CarouselDisplay from "@/components/CarouselDisplay";
-import { Button, Container, Flex, Group, Card, Text, Badge, Center, Title, Box} from "@mantine/core";
+import { Button, Container, Flex, Group, Card, Center, Title, Box} from "@mantine/core";
 import perago3 from "../assets/perago3.png"
 import perago4 from "../assets/perago4.png"
 import customer from "../assets/customerEngagement.png"
@@ -91,7 +91,7 @@ export default function Home() {
               </p>
 
                 <Group>
-                  <Button color="gray" >View Details</Button>
+                  <a href="/eservice"><Button color="gray" >View Details</Button></a>
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
 
@@ -381,10 +381,6 @@ export default function Home() {
           />
 
         </Box>
-       
-     
-      
-     
     </Flex>
 
   </Card>
