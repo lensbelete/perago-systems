@@ -62,7 +62,7 @@ const RequestDemo = () => {
               Request Demo
             </Title>
             <form onSubmit={form.onSubmit((values) => console.log(values))}>
-              <Group direction="column">
+              <Group direction="column" mt="lg" mb="xl">
                 <Popover
                   opened={!!form.errors.fullName}
                   position="bottom"
@@ -101,7 +101,7 @@ const RequestDemo = () => {
                 </Popover>
               </Group>
 
-              <Group direction="column" mt="lg">
+              <Group direction="column" mt="lg" mb="xl">
                 <Popover
                   opened={!!form.errors.companyName}
                   position="bottom"
@@ -140,7 +140,7 @@ const RequestDemo = () => {
                 </Popover>
               </Group>
 
-              <Group direction="column" mt="lg">
+              <Group direction="column" mt="lg" mb="xl">
                 <Popover
                   opened={!!form.errors.email}
                   position="bottom"
@@ -179,7 +179,12 @@ const RequestDemo = () => {
                 </Popover>
               </Group>
 
-              <Group direction="row" mt="lg" style={{ alignItems: "flex-end" }}>
+              <Group
+                direction="row"
+                mt="lg"
+                mb="xl"
+                style={{ alignItems: "flex-end" }}
+              >
                 <Popover
                   opened={!!form.errors.areaCode}
                   position="bottom"
@@ -233,7 +238,7 @@ const RequestDemo = () => {
                 />
               </Group>
 
-              <Group direction="column" mt="lg">
+              <Group direction="column" mt="lg" mb="xl">
                 <Popover
                   opened={!!form.errors.helpMessage}
                   position="bottom"
