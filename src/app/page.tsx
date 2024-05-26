@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <CarouselDisplay/>
       <div className=" text-center">
-        <div className="bg-[#F5F5F5] py-8">
+        <div className="bg-[#F5F5F5] py-8 px-3" >
           <Container px={0} size="50rem" >
           <Title
             order={1}
@@ -59,13 +59,13 @@ export default function Home() {
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
-            <Box w="20%">
+            <Box w={{ base: '40%', sm: '20%' }} className="mx-auto">
             <Image    
                 src = {perago4}
                 alt ="perago image"
                 />
             </Box>
-            <Box w="80%">
+            <Box w={{ base: '100%', sm: '80%' }}>
             <Title
                 order={1}
                 mb="sm"
@@ -90,7 +90,7 @@ export default function Home() {
                   and within departments.
               </p>
 
-                <Group>
+                <Group className="hidden sm:flex ">
                   <a href="/eservice"><Button color="gray" >View Details</Button></a>
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
@@ -109,11 +109,11 @@ export default function Home() {
       <Container size="lg" py="xl" >
         <Card className="bg-[#F5F5F5]">
           <Flex 
-           direction={{ base: 'column', sm: 'row' }}
+            direction={{ base: 'column-reverse', sm: 'row' }}
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
-           <Box w="80%">
+           <Box w={{ base: '100%', sm: '80%' }}>
            <Title
                 order={1}
                 mb="sm"
@@ -140,18 +140,25 @@ export default function Home() {
                  Order & Ship Notices, and contract management.
               </p>
 
-                <Group>
+                <Group className="hidden sm:flex">
                   <a href="/eProcure"><Button color="gray" >View Details</Button></a>
                   
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
            </Box>
 
-           <Box w="20%">
-            <Image    
-                src = {perago3}
-                alt ="perago image"
-              />
+           <Box w={{ base: '40%', sm: '20%' }} className="mx-auto">
+            
+           <div className="w-full ">
+          <Image
+            src={perago3}
+            alt="perago image"
+            
+          />
+          </div>
+
+       
+            
            </Box>
            
           
@@ -169,14 +176,14 @@ export default function Home() {
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
-            <Box w="20%" >
+            <Box w={{base:"40%", sm:"20%"}} className="mx-auto">
               <Image
                   
                 src = {customer}
                 alt ="perago image"
                 />
             </Box>
-            <Box w="80%">
+            <Box w={{base:"100%", sm:"80%"}}>
             <Title
                 order={1}
                 mb="sm"
@@ -203,7 +210,7 @@ export default function Home() {
               encourages customers&apos; engagement in controlling the quality of services and instills accountability in the workplace.
               </p>
 
-                <Group>
+                <Group className="hidden sm:flex">
                   <a href="/engage"><Button color="gray" >View Details</Button></a>
                   
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
@@ -223,11 +230,11 @@ export default function Home() {
 <Container size="lg" py="xl" >
   <Card className="bg-[#F5F5F5]">
     <Flex 
-     direction={{ base: 'column', sm: 'row' }}
+     direction={{ base: 'column-reverse', sm: 'row' }}
      gap={{ base: 'sm', sm: 'lg' }}
      justify={{ sm: 'center' }}
     >
-      <Box w="80%">
+      <Box w={{base:"100%", sm:"80%"}}>
       <Title
           order={1}
           mb="sm"
@@ -254,14 +261,14 @@ export default function Home() {
 
         </p>
 
-          <Group>
+          <Group className="hidden sm:flex">
             <a href="/measure"> <Button color="gray" >View Details</Button></a>
            
             <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
           </Group>
       </Box>
       
-      <Box w="20%">
+      <Box w={{base:"40%", sm:"20%"}} className="mx-auto">
         <Image    
             src = {performance}
             alt ="perago image"
@@ -285,14 +292,14 @@ export default function Home() {
      justify={{ sm: 'center' }}
     >
       
-        <Box w="20%"> 
+        <Box w={{base:"40%", sm:"20%"}} className="mx-auto"> 
           <Image    
           src = {data}
           alt ="perago image"
           />
           </Box>
 
-          <Box w="80%">
+          <Box w={{base:"100%", sm: "80%"}}>
           <Title
           order={1}
           mb="sm"
@@ -317,7 +324,7 @@ export default function Home() {
 
         </p>
 
-          <Group>
+          <Group className="hidden sm:flex">
             <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
           </Group>
         </Box>
@@ -336,12 +343,12 @@ export default function Home() {
 <Container size="lg" py="xl" >
   <Card className="bg-[#F5F5F5]">
     <Flex 
-     direction={{ base: 'column', sm: 'row' }}
+     direction={{ base: 'column-reverse', sm: 'row' }}
      gap={{ base: 'sm', sm: 'lg' }}
      justify={{ sm: 'center' }}
     >
 
-      <Box w="80%">
+      <Box w={{base:"100%", sm:"80%"}}>
       <Title
           order={1}
           mb="sm"
@@ -366,7 +373,7 @@ export default function Home() {
 
         </p>
 
-          <Group>
+          <Group className="hidden sm:flex">
            
             <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
           </Group>
@@ -375,7 +382,7 @@ export default function Home() {
      
    
     
-        <Box w="20%">
+        <Box w={{base:"40%", sm:"20%"}} className="mx-auto">
         <Image    
           src = {payment}
           alt ="perago image"
