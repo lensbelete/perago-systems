@@ -11,7 +11,7 @@ const ContactUs = () => {
           <Title
             order={1}
             mb="xl"
-            style={{ fontWeight: "normal", color: "green" }}
+            style={{ fontWeight: "bold", color: "green" }}
           >
             Contact Us
           </Title>
@@ -77,11 +77,10 @@ const ContactUs = () => {
               mt="sm"
               style={{ fontWeight: "normal", fontSize: "1.1rem" }}
             >
-                <a href="tel:+251(114)701998">+251(114)701998</a>
-              
+              <a href="tel:+251(114)701998">+251(114)701998</a>
+
               <br />
               <a href="tel:+251-911-231622">+251-911-231622</a>
-              
             </Text>
           </Card>
           <Card
@@ -107,8 +106,7 @@ const ContactUs = () => {
               mt="sm"
               style={{ fontWeight: "normal", fontSize: "1.1rem" }}
             >
-                <a href="mailto:email@example.com">Info@peragosystems.com</a>
-              
+              <a href="mailto:email@example.com">Info@peragosystems.com</a>
             </Text>
           </Card>
         </div>
