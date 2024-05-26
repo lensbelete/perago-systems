@@ -51,19 +51,14 @@ const RequestDemo = () => {
   };
 
   return (
-    <div
-     
-    >
-      <Container size="md" py="xl">
+    <Container size="md"  className="h-screen">
         <Card
           shadow="sm"
-          padding="lg"
-          radius="lg"
           withBorder
           style={{ backgroundColor: "#f0f0f0"}}
-          className="p-32"
+          className="p-32 pt-3 h-screen "
         >
-          <Card shadow="sm" className="p-10" radius="md" withBorder>
+          <Card shadow="sm" className="p-10 mt-1 overflow-y-scroll" radius="md" withBorder>
             <Title  mb="xl" className="text-center">
               Request Demo
             </Title>
@@ -166,6 +161,7 @@ const RequestDemo = () => {
               <Group mt="lg" mb="xl">            
                     <Textarea
                       withAsterisk
+                      resize="both"
                       label="How Can We Help You?"
                       placeholder="Enter your message here"
                       {...form.getInputProps("helpMessage")}
@@ -195,7 +191,7 @@ const RequestDemo = () => {
         </Card>
         
       </Container>
-    </div>
+    
   );
 };
 
