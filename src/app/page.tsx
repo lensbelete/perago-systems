@@ -37,7 +37,7 @@ export default function Home() {
       </div>
 
       <div className="pt-9">
-     `` <Container>
+      <Container>
           <Center>
               <Title
                 order={1}

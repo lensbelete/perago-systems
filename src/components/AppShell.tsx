@@ -1,5 +1,5 @@
 "use client"
-import { AppShell, NavLink, Flex, Burger, Drawer } from '@mantine/core';
+import { AppShell, NavLink, Flex, Burger, Drawer, Box, Text } from '@mantine/core';
 import Image from 'next/image';
 import { IconGauge, IconHome, IconSettings, IconCalendar, IconMail } from '@tabler/icons-react';
 import peragoImage from "../assets/perago2.png"
@@ -12,18 +12,18 @@ const Shell = ({ children }) => {
   return (
     <>
       <AppShell
-        header={{ height: 63 }}
-        footer={{ height: 201.2 }}
+        header={{ height: 80 }}
+        footer={{ height: 250 }}
         padding="md"
         withBorder={false}
       >
-        <AppShell.Header>
-          <div className='flex w-screen mt-2'>
-            <div className='ml-10 mt-4 mr-10'>
+        <AppShell.Header className='p-3 mb-10 shadow-md'>
+          <div className='flex w-screen items-center'>
+            <div className='ml-10 mr-10'>
               <a href='/'>
                 <Image
-                  width="120"
-                  height={31}
+                  width="150"
+                  height={40}
                   alt='Perago logo'
                   src={peragoImage}
                 />
@@ -40,47 +40,77 @@ const Shell = ({ children }) => {
                 href="/"
                 label="Home"
                 style={{ width: '200px' }}
-                leftSection={<IconHome size="1rem" stroke={1.5} />}
-                color='gray'
+                leftSection={<IconHome size="1.5rem" stroke={1.5} color='#55ba4a'/>}
+                color='#55ba4a'
+                styles={{
+                  label: {
+                    fontSize: '1.1rem', 
+                    width: "3%",
+                  }
+                }}
               />
               <NavLink
                 href="/about"
                 label="About Us"
-                leftSection={<IconGauge size="1rem" stroke={1.5} />}
-                color='gray'
+                leftSection={<IconGauge size="1.5rem" stroke={1.5} color='#55ba4a'/>}
+                color='#55ba4a'
+                styles={{
+                  label: {
+                    fontSize: '1.1rem', width: "3%",
+                  }
+                }}
               />
               <NavLink
                 href="/servicePages"
                 label="Services"
-                color='gray'
-                leftSection={<IconSettings size="1rem" stroke={1.5} />}
+                color='#55ba4a'
+                leftSection={<IconSettings size="1.5rem" stroke={1.5} color='#55ba4a' />}
+                styles={{
+                  label: {
+                    fontSize: '1.1rem',
+                    width: "3%",
+                  }
+                }}
               />
               <NavLink
                 href="/contactUs"
                 label="Contact Us"
-                color='gray'
-                leftSection={<IconCalendar size="1rem" />}
+                color='#55ba4a'
+                leftSection={<IconCalendar size="1.5rem" color='#55ba4a' />}
+                styles={{
+                  label: {
+                    fontSize: '1.1rem',
+                    width: "3%", 
+                  }
+                }}
               />
               <NavLink
                 href="/requestDemo"
                 label="Request Demo"
-                leftSection={<IconMail color='gray' size="1rem" stroke={1.5} />}
+                leftSection={<IconMail color='#55ba4a' size="1.5rem" stroke={1.5} />}
+                styles={{
+                  label: {
+                    fontSize: '1.1rem',
+                    width: "25%", 
+                  }
+                }}
               />
             </Flex>
             <Burger
               opened={opened}
               onClick={toggle}
-              className="md:hidden float-end"
+              className="md:hidden ml-auto mr-4"
               size="sm"
               left={0}
+              color="#55ba4a"
             />
           </div>
         </AppShell.Header>
         <AppShell.Main className='pl-0 pr-0 pt-16'>
           {children}
         </AppShell.Main>
-        <AppShell.Footer className='relative bg-green-600 h-[25%] ' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
-          <div className='flex-row justify-center pb-5 bold'>
+        <AppShell.Footer className='relative bg-green-600 h-[30%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
+          <div className='flex-row justify-center pb-5 font-bold'>
             <div className='flex justify-center'>
               <Image
                 alt='perago logo'
@@ -88,19 +118,23 @@ const Shell = ({ children }) => {
                 className='h-[20%] w-[20%] p-5'
               />
             </div>
+            <div>
+            <Text className='text-center'>Perago Information Systems</Text>
+            </div>
             <div className="flex flex-row flex-wrap justify-center items-center">
-              <div className="flex w-full md:w-1/3 justify-center">
-                <p>Email: info@peragoSystems.com</p>
-              </div>
-              <div className="w-full flex md:w-1/3 justify-center">
+              <Box className="flex w-full md:w-1/3 justify-center">
+              <Text>Email: <a href="mailto:email@example.com">Info@peragosystems.com</a></Text>
+              </Box>
+              <Box className="w-full flex md:w-1/3 justify-center">
                 <div>
-                  <p className='text-center'>Perago Information Systems</p>
-                  <p>Tel: +251 114 701 998 | +251 911 231 622</p>
+
+                  <Text>
+                  <a href="tel:+251-911-231622">+251-911-231622</a>  <a href="tel:+251(114)701998">+251(114)701998</a> </Text>
                 </div>
-              </div>
-              <div className="flex justify-center w-full md:w-1/3">
-                <p>Po.Box: 139 Addis Ababa, Ethiopia</p>
-              </div>
+              </Box>
+              <Box className="flex justify-center w-full md:w-1/3">
+                <Text>Po.Box: 139 Addis Ababa, Ethiopia</Text>
+              </Box>
             </div>
           </div>
         </AppShell.Footer>
@@ -115,35 +149,35 @@ const Shell = ({ children }) => {
         <NavLink
           href="/"
           label="Home"
-          leftSection={<IconHome size="1rem" stroke={1.5} />}
-          color='gray'
+          leftSection={<IconHome size="1rem" stroke={1.5} color="#55ba4a" />}
+          color='#55ba4a'
           onClick={close}
         />
         <NavLink
           href="/about"
           label="About Us"
-          leftSection={<IconGauge size="1rem" stroke={1.5} />}
-          color='gray'
+          leftSection={<IconGauge size="1rem" stroke={1.5} color="#55ba4a" />}
+          color='#55ba4a'
           onClick={close}
         />
         <NavLink
           href="/service"
           label="Services"
-          color='gray'
-          leftSection={<IconSettings size="1rem" stroke={1.5} />}
+          color='#55ba4a'
+          leftSection={<IconSettings size="1rem" stroke={1.5} color="#55ba4a" />}
           onClick={close}
         />
         <NavLink
           href="/contactUs"
           label="Contact Us"
-          color='gray'
-          leftSection={<IconCalendar size="1rem" />}
+          color='#55ba4a'
+          leftSection={<IconCalendar size="1rem" color="#55ba4a" />}
           onClick={close}
         />
         <NavLink
           href="/requestDemo"
           label="Request Demo"
-          leftSection={<IconMail color='gray' size="1rem" stroke={1.5} />}
+          leftSection={<IconMail color='#55ba4a' size="1rem" stroke={1.5} />}
           onClick={close}
         />
       </Drawer>
