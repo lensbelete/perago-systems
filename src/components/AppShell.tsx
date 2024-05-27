@@ -44,7 +44,7 @@ const Shell = ({ children }) => {
               direction="row"
               justify="space-between"
               align="center"
-              className="hidden md:flex w-[60%] gap-0"
+              className="hidden md:flex w-[40%] gap-0"
             >
               <NavLink
                 href="/"
