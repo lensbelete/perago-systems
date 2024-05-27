@@ -16,16 +16,16 @@ export default function Home() {
     <>
       <CarouselDisplay/>
       <div className=" text-center">
-        <div className="bg-[#F5F5F5] py-8 px-3" >
-          <Container px={0} size="50rem" >
+        <div className="bg-[#F5F5F5] py-8 px-3 pb-12" >
+          <Container px={0} size="55rem" >
           <Title
             order={1}
-            mb="xl"
-            style={{ fontWeight: "normal", color: "green" }}
+            style={{color: "#55ba4f" }}
+            className="mb-3 font-semibold"
           >
             Who We Are
           </Title>
-            <p className="text-justify leading-7 text-lg">Perago Systems is a technology company that focuses on developing 
+            <p className="text-center text-gray-700">Perago Systems is a technology company that focuses on developing 
               and implementing electronic government and B2B commerce solutions 
               towards the provision of various online transactional services. 
               Perago provides strong technical support and knowledge transfer 
@@ -41,8 +41,9 @@ export default function Home() {
           <Center>
               <Title
                 order={1}
-                mb="xl"
-                style={{ fontWeight: "normal", color: "green" }}
+                
+                style={{ color: "#55ba4f" }}
+                className="font-semibold"
               >
                 What We Offer
               </Title>
@@ -50,38 +51,44 @@ export default function Home() {
         </Container>
       </div>
         
-    <div className="bg-white">
+    <div className="bg-white pb-3">
 
-      <Container size="lg" py="xl" >
-        <Card>
+      <Container className="sm:w-[90%]" py="xl" >
+        <Card className="sm:m-0 m-3 sm:shadow-none shadow-lg px-auto">
           <Flex 
            direction={{ base: 'column', sm: 'row' }}
+           align={{ sm: 'center' }}
+
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
-            <Box w={{ base: '40%', sm: '20%' }} className="mx-auto">
+            <Box w={{ base: '25%', sm: '20%' }} className="mx-auto flex items-center pr-2">
             <Image    
                 src = {perago4}
                 alt ="perago image"
                 />
             </Box>
             <Box w={{ base: '100%', sm: '80%' }}>
-            <Title
+          
+              <Title
                 order={1}
                 mb="sm"
-                style={{ fontWeight: "normal", color: "green" }}
+                className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
               > E-Services Platform 
               </Title>
+
               <Title
-              order={5}
+              order={4}
               mb="sm"
-              style={{ fontWeight: "semibold", color: "green" }}
+              className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
+      
+      
               >
                  One stop public services provision platform.
 
               </Title>
           
-              <p className="text-justify pb-8 text-lg">
+              <p className="pb-8 ">
                
                 The E-Services Platform is an intelligent business process management 
                 solution enabling client&apos;s to achieve paperless business transformation. 
@@ -91,7 +98,7 @@ export default function Home() {
               </p>
 
                 <Group className="hidden sm:flex ">
-                  <a href="/eservice"><Button color="gray" >View Details</Button></a>
+                  <a href="/eservice"><Button variant="outline" color="gray" >View Details</Button></a>
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
                 </Group>
 
@@ -104,33 +111,36 @@ export default function Home() {
     </div>
    
 
-    <div className="bg-[#F5F5F5]">
+    <div className="sm:bg-[#F5F5F5] bg-white pb-3" >
 
-      <Container size="lg" py="xl" >
-        <Card className="bg-[#F5F5F5]">
+      <Container className="sm:w-[95%] pb-5" py="xl" >
+        <Card className="sm:m-0 m-3 sm:shadow-none shadow-lg px-auto sm:bg-[#F5F5F5] bg-white">
           <Flex 
+          align={{ sm: 'center' }}
+
             direction={{ base: 'column-reverse', sm: 'row' }}
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
            <Box w={{ base: '100%', sm: '80%' }}>
+           
            <Title
                 order={1}
                 mb="sm"
-                style={{ fontWeight: "normal", color: "green" }}
+                className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
               > E-Procurement Platform
               </Title>
               <Title
               order={5}
               mb="sm"
-              style={{ fontWeight: "semibold", color: "green" }}
+              className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
               >
                 Better Planning, just-In-Time-Requisitions, 
                 competitive Bidding and Effective contract Management.
 
               </Title>
           
-              <p className="text-justify pb-8 text-lg">
+              <p className="pb-8 ">
                
               The E-Procurement Platform (ePROCURE) serves as a collaborative suit of 
               technology products in managing key procurement activities in acquisition of
@@ -141,24 +151,17 @@ export default function Home() {
               </p>
 
                 <Group className="hidden sm:flex">
-                  <a href="/eProcure"><Button color="gray" >View Details</Button></a>
+                  <a href="/eProcure"><Button variant="outline" color="gray">View Details</Button></a>
                   
                   <a href="/requestDemo"><Button color="green">Request Demo</Button></a>
-                </Group>
+                </Group> 
+         
            </Box>
 
-           <Box w={{ base: '40%', sm: '20%' }} className="mx-auto">
-            
-           <div className="w-full ">
-          <Image
-            src={perago3}
-            alt="perago image"
-            
-          />
-          </div>
-
-       
-            
+           <Box w={{ base: '25%', sm: '20%' }} className="mx-auto flex items-center pl-2">
+              <Image
+                src={perago3}
+                alt="perago image"/>
            </Box>
            
           
@@ -167,16 +170,16 @@ export default function Home() {
       </Container>
     </div>
 
-    <div>
+    <div className="bg-white pb-3">
 
-      <Container size="lg" py="xl" >
-        <Card>
+      <Container  className="sm:w-[90%]" py="xl" >
+        <Card className="sm:m-0 m-3 sm:shadow-none shadow-lg px-auto">
           <Flex 
            direction={{ base: 'column', sm: 'row' }}
            gap={{ base: 'sm', sm: 'lg' }}
            justify={{ sm: 'center' }}
           >
-            <Box w={{base:"40%", sm:"20%"}} className="mx-auto">
+            <Box  w={{ base: '25%', sm: '20%' }} className="mx-auto flex items-center pl-2">
               <Image
                   
                 src = {customer}
@@ -187,20 +190,20 @@ export default function Home() {
             <Title
                 order={1}
                 mb="sm"
-                style={{ fontWeight: "normal", color: "green" }}
+                className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
               > Customer Engagement Services
               </Title>
               <Title
               order={5}
               mb="sm"
-              style={{ fontWeight: "semibold", color: "green" }}
+              className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
               >
                 Streamline customer engagement, automate repetitive works,
                  and enhance collaboration within and outside the organization.
 
               </Title>
           
-              <p className="text-justify pb-8 text-lg">
+              <p className="pb-8">
                
               The Customer Engagement Platform (ENGAGE) is a powerful and easy-to-use web-based 
               customer services and complaint redressal system. It serves as a communication platform 
@@ -225,10 +228,10 @@ export default function Home() {
         </Card>
       </Container>
     </div>
-  <div className="bg-[#F5F5F5]">
+<div className="sm:bg-[#F5F5F5] bg-white pb-3">
 
-<Container size="lg" py="xl" >
-  <Card className="bg-[#F5F5F5]">
+<Container className="sm:w-[80%]" py="xl" >
+  <Card className="sm:m-0 m-3 sm:shadow-none shadow-lg px-auto sm:bg-[#F5F5F5] bg-white">
     <Flex 
      direction={{ base: 'column-reverse', sm: 'row' }}
      gap={{ base: 'sm', sm: 'lg' }}
@@ -238,18 +241,18 @@ export default function Home() {
       <Title
           order={1}
           mb="sm"
-          style={{ fontWeight: "normal", color: "green" }}
+          className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
         > Performance Management
         </Title>
         <Title
         order={5}
         mb="sm"
-        style={{ fontWeight: "semibold", color: "green" }}
+        className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
         >
         Managing your Key Performance Indicators to better business results.
         </Title>
     
-        <p className="text-justify pb-8 text-lg">
+        <p className="pb-8">
          
         MEASURE is a web-based performance management and productivity platform to design, plan, 
         execute, measure and manage organizational strategy by linking a vision and mission to 
@@ -268,7 +271,7 @@ export default function Home() {
           </Group>
       </Box>
       
-      <Box w={{base:"40%", sm:"20%"}} className="mx-auto">
+      <Box  w={{ base: '25%', sm: '20%' }} className="mx-auto flex items-center pl-2">
         <Image    
             src = {performance}
             alt ="perago image"
@@ -282,17 +285,17 @@ export default function Home() {
 </Container>
 </div>
 
-<div>
+<div className="bg-white pb-3">
 
-<Container size="lg" py="xl" >
-  <Card>
+<Container  className="sm:w-[80%]" py="xl" >
+  <Card className="sm:m-0 m-3 sm:shadow-none shadow-lg px-auto">
     <Flex 
      direction={{ base: 'column', sm: 'row' }}
      gap={{ base: 'sm', sm: 'lg' }}
      justify={{ sm: 'center' }}
     >
       
-        <Box w={{base:"40%", sm:"20%"}} className="mx-auto"> 
+        <Box  w={{ base: '25%', sm: '20%' }} className="mx-auto flex items-center pl-2"> 
           <Image    
           src = {data}
           alt ="perago image"
@@ -303,18 +306,18 @@ export default function Home() {
           <Title
           order={1}
           mb="sm"
-          style={{ fontWeight: "normal", color: "green" }}
+          className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
         > Data Management Services
         </Title>
         <Title
         order={5}
         mb="sm"
-        style={{ fontWeight: "semibold", color: "green" }}
+        className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
         >
         Maximize the decision-making power of your data assets.
         </Title>
     
-        <p className="text-justify pb-8 text-lg">
+        <p className="pb-8">
          
         The Data Management Platform consists of an enterprise data hub, system for data 
         inflow and outflow, databases, data marts and data warehouse as well as technology for 
@@ -338,10 +341,10 @@ export default function Home() {
 </div>
 
 
-<div className="bg-[#F5F5F5]"> 
+<div className="sm:bg-[#F5F5F5] bg-white pb-3"> 
 
-<Container size="lg" py="xl" >
-  <Card className="bg-[#F5F5F5]">
+<Container  className="sm:w-[80%]" py="xl" >
+  <Card className="sm:m-0 m-3 sm:shadow-none shadow-lg px-auto sm:bg-[#F5F5F5] bg-white">
     <Flex 
      direction={{ base: 'column-reverse', sm: 'row' }}
      gap={{ base: 'sm', sm: 'lg' }}
@@ -352,19 +355,19 @@ export default function Home() {
       <Title
           order={1}
           mb="sm"
-          style={{ fontWeight: "normal", color: "green" }}
+          className="font-semibold sm:text-[#55ba4f]  text-black sm:text-left text-center"
         > Online Payments
         </Title>
         <Title
         order={5}
         mb="sm"
-        style={{ fontWeight: "semibold", color: "green" }}
+        className="font-semibold sm:text-[#55ba4f] text-black sm:text-left text-center"
         >
         Efficient, secured and affordable online retail payment services.
 
         </Title>
     
-        <p className="text-justify pb-8 text-lg">
+        <p className="pb-8">
          
         The Online Payment Platform helps customers pay for government service fees,
          utilities, and retail purchases seamlessly by integrating it with our e-services 
@@ -382,7 +385,7 @@ export default function Home() {
      
    
     
-        <Box w={{base:"40%", sm:"20%"}} className="mx-auto">
+        <Box  w={{ base: '25%', sm: '20%' }} className="mx-auto flex items-center pl-2">
         <Image    
           src = {payment}
           alt ="perago image"
