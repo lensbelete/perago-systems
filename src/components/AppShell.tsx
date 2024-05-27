@@ -13,6 +13,7 @@ const Shell = ({ children }) => {
     <>
       <AppShell
         header={{ height: 70 }}
+    
 
         padding="md"
         withBorder={false}
@@ -33,7 +34,7 @@ const Shell = ({ children }) => {
               direction="row"
               justify="space-between"
               align="center"
-              className="hidden md:flex w-[60%] gap-0"
+              className="hidden md:flex w-[40%] gap-0"
             >
               <NavLink
                 href="/"
@@ -81,17 +82,7 @@ const Shell = ({ children }) => {
                   }
                 }}
               />
-              <NavLink
-                href="/requestDemo"
-                label="Request Demo"
-                leftSection={<IconMail color='#55ba4a' size="1.5rem" stroke={1.5} />}
-                styles={{
-                  label: {
-                    fontSize: '1rem',
-                    
-                  }
-                }}
-              />
+              
               
             
         
@@ -113,13 +104,13 @@ const Shell = ({ children }) => {
   
         </AppShell.Main>
         
-        <AppShell.Footer className='relative bg-green-600 h-[30%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
+        <AppShell.Footer className='relative bg-green-600 h-[10%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
           <div className='flex-row justify-center pb-5 font-bold'>
             <div className='justify-center flex w-[100%] sm:w-[100%]'>
               <Image
                 alt='perago logo'
                 src={peragoImage2}
-                className='h-[20%] w-[20%] p-5'
+                className='h-[10%] w-[10%] p-5'
               />
             </div>
             <div className='py-3'>
