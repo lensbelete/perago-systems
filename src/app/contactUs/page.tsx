@@ -72,7 +72,7 @@ const ContactUs = () => {
             >
               Phone Number
             </Title>
-            <Text
+            {/* <Text
               align="center"
               mt="sm"
               style={{ fontWeight: "normal", fontSize: "1.1rem" }}
@@ -81,7 +81,7 @@ const ContactUs = () => {
 
               <br />
               <a href="tel:+251-911-231622">+251-911-231622</a>
-            </Text>
+            </Text> */}
           </Card>
           <Card
             shadow="sm"
