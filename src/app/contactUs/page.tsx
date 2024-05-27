@@ -11,7 +11,7 @@ const ContactUs = () => {
           <Title
             order={1}
             mb="xl"
-            style={{ fontWeight: "bold", color: "green" }}
+            style={{ fontWeight: "550", color: "#55ba4f" }}
           >
             Contact Us
           </Title>
@@ -46,14 +46,12 @@ const ContactUs = () => {
               align="center"
               mt="sm"
               style={{ fontWeight: "normal", fontSize: "1.1rem" }}
-              
             >
               Addis Ababa,Ethiopia,
               <br />
-              Haile Gebre Silase  St.
+              Haile Gebre Silase St.
               <br />
               Noah City Point building 4th floor
-             
             </Text>
           </Card>
           <Card

@@ -8,7 +8,7 @@ const AboutUs = () => {
       <Title
         order={1}
         mb="lg"
-        style={{ color: "#55ba4f", fontWeight: "normal", fontSize: "2.5rem" }}
+        style={{ color: "#55ba4f", fontWeight: "550", fontSize: "2.5rem" }}
         className="pt-1"
       >
         About Us

@@ -6,19 +6,17 @@ import { IconCircleCheck } from "@tabler/icons-react";
 
 const SubmitPage = () => {
   return (
-    <div
-    className="flex justify-center py-10"
-    >
+    <div className="flex justify-center py-10">
       <Card shadow="sm" padding="lg" radius="md" style={{ width: "50%" }}>
         <Container style={{ textAlign: "center" }}>
           <div className="flex justify-center">
-          <IconCircleCheck size={100} color="green" stroke={2}/>
+            <IconCircleCheck size={100} color="#55ba4f" stroke={2} />
           </div>
-          
+
           <Text
             mt="sm"
             size="xl"
-            style={{ fontWeight: "bold", fontSize: "2rem" }}
+            style={{ fontWeight: "550", fontSize: "2rem" }}
           >
             Thank You!
           </Text>
@@ -30,23 +28,19 @@ const SubmitPage = () => {
 
         <Group mt="lg" align="center" className="flex ">
           <div className="flex justify-start">
-            <Text size="sm" >
+            <Text size="sm" style={{ color: "blue" }}>
               Now create your own Jotform - It’s free!
             </Text>
           </div>
 
           <div className="flex justify-end ml-auto">
             <Button
-            color="green"
-              
+              color="#55ba4f"
               onClick={() => (window.location.href = "https://www.jotform.com")}
             >
               Create your own Jotform
             </Button>
-
           </div>
-          
-         
         </Group>
       </Card>
     </div>

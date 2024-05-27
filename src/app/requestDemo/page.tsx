@@ -60,7 +60,7 @@ const RequestDemo = () => {
           radius="md"
           withBorder
         >
-          <Title mb="xl" className="text-center">
+          <Title mb="xl" className="text-center" style={{ fontWeight: "550" }}>
             Request Demo
           </Title>
           <form onSubmit={form.onSubmit(handleSubmit)}>
