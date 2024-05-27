@@ -49,14 +49,14 @@ const RequestDemo = () => {
     <Container size="md" className="h-screen">
       <Card
         shadow="sm"
-        className="p-8 sm:p-32 pt-4 h-screen mt-1"
+        className="p-8 sm:p-16 pt-4 h-full mt-1 flex items-center justify-center"
         radius="md"
         withBorder
         style={{ backgroundColor: "#f0f0f0" }}
       >
         <Card
           shadow="sm"
-          className="p-4 sm:p-10 mt-1 overflow-y-scroll"
+          className="p-4 sm:p-8 w-full h-full overflow-y-scroll"
           radius="md"
           withBorder
         >
