@@ -1,27 +1,22 @@
 import Image from "next/image";
 import peragoLogo from "../../assets/perago1.png";
-import { Flex, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col items-center justify-start container mx-auto">
+    <div className="min-h-screen flex flex-col items-center justify-start pt-2 ">
       <Title
         order={1}
-        mb="sm"
+        mb="lg"
         style={{ color: "#55ba4f", fontWeight: "normal" }}
-        className="pt-6"
+        className="pt-1"
       >
         About Us
       </Title>
-
-      <div className="w-screen flex justify-center mb-1">
-        <Image
-          src={peragoLogo}
-          className="w-screen"
-          alt="perago logo for about page"
-        />
+      <div className="w-full flex justify-center mb-8">
+        <Image src={peragoLogo} alt="Perago logo" />
       </div>
-      <div className="w-screen px-14 bg-gray-100">
+      <div className="w-screen px-14">
         <Title
           order={3}
           mb="sm"
@@ -31,14 +26,8 @@ const AboutUs = () => {
           Who We Are
         </Title>
         <hr className="border-gray-300 w-full mb-6" />
-        <p
-          className="leading-relaxed mb-4 text-lg"
-          style={{ color: "#343a40", fontSize: "0.9rem" }}
-        >
-          <span
-            className="font-bold"
-            style={{ color: "#343a40", fontSize: "1.0rem" }}
-          >
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          <span className="text-gray-600 font-bold">
             Perago Information Systems PLC
           </span>{" "}
           is a cutting-edge and innovative technology-based solution providing
@@ -50,10 +39,7 @@ const AboutUs = () => {
           solutions; research and training services; E-governance enablement;
           ICT consulting; and capacity building, in Ethiopia and beyond.
         </p>
-        <p
-          className="leading-relaxed mb-8 text-lg"
-          style={{ color: "#343a40", fontSize: "0.9rem" }}
-        >
+        <p className="text-gray-600 text-sm leading-relaxed mb-8">
           Perago is established by highly qualified and experienced
           professionals in management, economics, business administration,
           software engineering, and information systems management; and it also
@@ -67,7 +53,7 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="w-full bg-white py-20">
+      <div className="w-full bg-white py-10">
         <Title
           order={1}
           mb="sm"
@@ -80,279 +66,128 @@ const AboutUs = () => {
         <Title
           order={1}
           mb="sm"
-          style={{ color: "#55ba4f", fontWeight: "normal", fontSize: "2.0rem" }}
+          style={{ color: "#55ba4f", fontWeight: "normal", fontSize: "1.8rem" }}
           className="pt-1 text-center"
         >
           Reasons to choose us
         </Title>
 
-        <Flex
-          direction={{ base: "column", sm: "row" }}
-          gap={{ base: "sm", sm: "lg" }}
-          justify={{ sm: "center" }}
-          className="p-5"
-        >
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-            <Title
-              order={4}
-              mb="sm"
-              style={{
-                color: "#55ba4f",
-                fontWeight: "normal",
-                fontSize: "1.0rem",
-              }}
-              className="pt-6"
-            >
-              Diversified Experience in Software Engineering
-            </Title>
-
-            <hr className="border-gray-300 mb-4" />
-            <p
-              className="text-gray-600 leading-relaxed text-lg"
-              style={{
-                fontSize: "1.0rem",
-              }}
-            >
-              We have hands on consulting and implementation experiences in
-              software development, system analysis, and software quality
-              assurance at national and regional levels.
-            </p>
+        <div className="flex flex-wrap justify-center gap-8 px-6 py-10">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-8">
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-sm text-green-600 mb-2">
+                Diversified Experience in Software Engineering
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We have hands on consulting and implementation experiences in
+                software development, system analysis, and software quality
+                assurance at national and regional levels.
+              </p>
+            </div>
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">Qualified Staff</h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Perago houses internationally certified professionals among the
+                few ones in the industry. This highly dedicated and committed
+                staff are the cornerstones for providing quality products and
+                services to our customers. We also engage subject matter experts
+                to make sure we understand every bit of our customers’ business
+                processes.
+              </p>
+            </div>
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">Customer Focus</h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We foster close relationships, rooted in trust and respect, with
+                our customers, and face together the everyday challenge of tying
+                the evolving information technology with their business goals.
+              </p>
+            </div>
           </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-            <Title
-              order={4}
-              mb="sm"
-              style={{
-                color: "#55ba4f",
-                fontWeight: "normal",
-                fontSize: "1.0rem",
-              }}
-              className="pt-6"
-            >
-              Qualified Staff
-            </Title>
 
-            <hr className="border-gray-300 mb-4" />
-            <p
-              className="text-gray-600 text-lg leading-relaxed"
-              style={{
-                fontSize: "1.0rem",
-              }}
-            >
-              Perago houses internationally certified professionals among the
-              few ones in the industry. This highly dedicated and committed
-              staff are the cornerstones for providing quality products and
-              services to our customers. We also engage subject matter experts
-              to make sure we understand every bit of our customers’ business
-              processes.
-            </p>
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-8 mt-8">
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">
+                Understand Customers’ needs
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We strive to understand our customers’ business, user,
+                operational, and system requirements before designing solutions.
+                Perago is very agile in addressing business process changes
+                during project periods.
+              </p>
+            </div>
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">
+                Awareness of all stakeholders
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We engage all stakeholders in every phase of our project life
+                cycle in order to get the confidence of users and to ensure the
+                solutions are put into service.
+              </p>
+            </div>
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">
+                Minimize the Total Cost of Ownership (TCO)
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Perago houses internationally certified professionals among the
+                few ones in the industry. This highly dedicated and committed
+                staffs are the cornerstones for providing quality products and
+                services to our customers.We also engage subject matter experts
+                to make sure we understand every bit of our customers’ business
+                processes.
+              </p>
+            </div>
           </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-            <Title
-              order={4}
-              mb="sm"
-              style={{
-                color: "#55ba4f",
-                fontWeight: "normal",
-                fontSize: "1.0rem",
-              }}
-              className="pt-6"
-            >
-              Customer Focus
-            </Title>
 
-            <hr className="border-gray-300 mb-4" />
-            <p
-              className="text-gray-600 text-lg leading-relaxed"
-              style={{
-                fontSize: "1.0rem",
-              }}
-            >
-              We foster close relationships, rooted in trust and respect, with
-              our customers, and face together the everyday challenge of tying
-              the evolving information technology with their business goals.
-            </p>
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-8 mt-8">
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">
+                Adaptation of technologies
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Fast adaptation of new technologies is the core of our business
+                strategy. We help our customers embrace the benefits of
+                technology to realize their business goals.
+              </p>
+            </div>
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-md text-green-600 mb-2">
+                Knowledge Transfer
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We always work in close partnership with our customers from
+                requirement understanding to solution delivery. During all the
+                phases we make sure that we able to impart our knowledge to
+                customers.
+              </p>
+            </div>
+            <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+              <h4 className="text-sm text-green-600 mb-2">
+                Timely Delivery & Support after solution delivery
+              </h4>
+              <hr className="border-gray-300 mb-4" />
+              <p className="text-gray-600 text-sm leading-relaxed">
+                To ensure long term successes, a high standing and solid
+                reputation in the marketplace are required. It is therefore a
+                Perago standard to deliver high quality products and services
+                within budget and time. We have the commitment to provide world
+                class support service to customers’ request.
+              </p>
+            </div>
           </div>
-        </Flex>
-
-        <Flex
-          direction={{ base: "column", sm: "row" }}
-          gap={{ base: "sm", sm: "lg" }}
-          justify={{ sm: "center" }}
-          className="p-5"
-        >
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-            <Title
-              order={4}
-              mb="sm"
-              style={{
-                color: "#55ba4f",
-                fontWeight: "normal",
-                fontSize: "1.0rem",
-              }}
-              className="pt-6"
-            >
-              Understand Customers’ needs
-            </Title>
-
-            <hr className="border-gray-300 mb-4" />
-            <p
-              className="text-gray-600 text-lg leading-relaxed"
-              style={{
-                fontSize: "1.0rem",
-              }}
-            >
-              We strive to understand our customers’ business, user,
-              operational, and system requirements before designing solutions.
-              Perago is very agile in addressing business process changes during
-              project periods.
-            </p>
-          </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-            <Title
-              order={4}
-              mb="sm"
-              style={{
-                color: "#55ba4f",
-                fontWeight: "normal",
-                fontSize: "1.0rem",
-              }}
-              className="pt-6"
-            >
-              Awareness of all stakeholders
-            </Title>
-
-            <hr className="border-gray-300 mb-4" />
-            <p
-              className="text-gray-600 text-lg leading-relaxed"
-              style={{
-                fontSize: "1.0rem",
-              }}
-            >
-              We engage all stakeholders in every phase of our project life
-              cycle in order to get the confidence of users and to ensure the
-              solutions are put into service.
-            </p>
-          </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-            <Title
-              order={4}
-              mb="sm"
-              style={{
-                color: "#55ba4f",
-                fontWeight: "normal",
-                fontSize: "1.0rem",
-              }}
-              className="pt-6"
-            >
-              Minimize the Total Cost of Ownership (TCO)
-            </Title>
-
-            <hr className="border-gray-300 mb-4" />
-            <p
-              className="text-gray-600 text-lg leading-relaxed"
-              style={{
-                fontSize: "1.0rem",
-              }}
-            >
-              Perago houses internationally certified professionals among the
-              few ones in the industry. This highly dedicated and committed
-              staff are the cornerstones for providing quality products and
-              services to our customers. We also engage subject matter experts
-              to make sure we understand every bit of our customers’ business
-              processes.
-            </p>
-          </div>
-        </Flex>
+        </div>
       </div>
-      <Flex
-        direction={{ base: "column", sm: "row" }}
-        gap={{ base: "sm", sm: "lg" }}
-        justify={{ sm: "center" }}
-        className="p-5"
-      >
-        <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-          <Title
-            order={4}
-            mb="sm"
-            style={{
-              color: "#55ba4f",
-              fontWeight: "normal",
-              fontSize: "1.0rem",
-            }}
-            className="pt-6"
-          >
-            Adaptation of technologies
-          </Title>
-
-          <hr className="border-gray-300 mb-4" />
-          <p
-            className="text-gray-600 text-lg leading-relaxed"
-            style={{
-              fontSize: "1.0rem",
-            }}
-          >
-            Fast adaptation of new technologies is the core of our business
-            strategy. We help our customers embrace the benefits of technology
-            to realize their business goals.
-          </p>
-        </div>
-        <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-          <Title
-            order={4}
-            mb="sm"
-            style={{
-              color: "#55ba4f",
-              fontWeight: "normal",
-              fontSize: "1.0rem",
-            }}
-            className="pt-6"
-          >
-            Knowledge Transfer
-          </Title>
-
-          <hr className="border-gray-300 mb-4" />
-          <p
-            className="text-gray-600 text-lg leading-relaxed"
-            style={{
-              fontSize: "1.0rem",
-            }}
-          >
-            We always work in close partnership with our customers from
-            requirement understanding to solution delivery. During all the
-            phases we make sure that we able to impart our knowledge to
-            customers.
-          </p>
-        </div>
-        <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
-          <Title
-            order={4}
-            mb="sm"
-            style={{
-              color: "#55ba4f",
-              fontWeight: "normal",
-              fontSize: "1.0rem",
-            }}
-            className="pt-6"
-          >
-            Timely Delivery & Support after solution delivery
-          </Title>
-
-          <hr className="border-gray-300 mb-4" />
-          <p
-            className="text-gray-600 text-lg leading-relaxed"
-            style={{
-              fontSize: "1.0rem",
-            }}
-          >
-            To ensure long term successes, a high standing and solid reputation
-            in the marketplace are required. It is therefore a Perago standard
-            to deliver high quality products and services within budget and
-            time. We have the commitment to provide world class support service
-            to customers’ request.
-          </p>
-        </div>
-      </Flex>
     </div>
   );
 };
