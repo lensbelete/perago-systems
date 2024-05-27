@@ -13,7 +13,7 @@ const Shell = ({ children }) => {
     <>
       <AppShell
         header={{ height: 80 }}
-        footer={{ height: 250 }}
+
         padding="md"
         withBorder={false}
       >
@@ -106,12 +106,16 @@ const Shell = ({ children }) => {
             />
           </div>
         </AppShell.Header>
+
         <AppShell.Main className='pl-0 pr-0 pt-20'>
-          {children}
+        
+            {children}
+  
         </AppShell.Main>
+        
         <AppShell.Footer className='relative bg-green-600 h-[30%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
           <div className='flex-row justify-center pb-5 font-bold'>
-            <div className='justify-center hidden sm:flex'>
+            <div className='justify-center flex w-[100%] sm:w-[100%]'>
               <Image
                 alt='perago logo'
                 src={peragoImage2}

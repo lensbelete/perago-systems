@@ -19,7 +19,7 @@ const Servicespage = () => {
   };
 
   return (
-    <div>
+    <div className="mb-12">
         
         <Tabs color="green" defaultValue="service">
             <div className="p-10">

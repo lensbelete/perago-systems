@@ -51,17 +51,18 @@ const RequestDemo = () => {
   };
 
   return (
-    <Container size="md"  className="h-screen">
+    <Container size="md"  className="h-full">
         <Card
           shadow="sm"
           withBorder
           style={{ backgroundColor: "#f0f0f0"}}
-          className="p-32 pt-3 h-screen "
+          className="p-28 pt-3 h-screen "
         >
-          <Card shadow="sm" className="p-10 mt-1 overflow-y-scroll" radius="md" withBorder>
+          <Card shadow="sm" className="p-10 mt-5 overflow-y-scroll" radius="md" withBorder>
             <Title  mb="xl" className="text-center">
               Request Demo
             </Title>
+            <hr/>
             <form onSubmit={form.onSubmit(handleSubmit)}>
               <Group  mt="lg" mb="xl">
                 

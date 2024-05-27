@@ -40,3 +40,8 @@ body {
   fill: black;
 }
 
+
+
+.mantine-AppShell-main {
+  margin-bottom: 0 !important;
+}
