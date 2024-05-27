@@ -13,7 +13,7 @@ const Engagepage = () => {
 
           <Text className='p-5 text-justify text-lg'> It is a communication platform between customers and a 
           service provider through various electronic channels of correspondence to enhance overall customer 
-          experiences and delight. The system encourages customers' engagement in controlling the quality 
+          experiences and delight. The system encourages customers&apos; engagement in controlling the quality 
           of services and instills accountability in the workplace. Currently, sponsored by the Ministry 
           of Communication and Information Technology, this customer service platform is being used by
            various organizations for online customer compliant and suggestion management. 
