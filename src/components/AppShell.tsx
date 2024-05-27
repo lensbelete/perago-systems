@@ -131,7 +131,11 @@ const Shell = ({ children }) => {
               <Image
                 alt="perago logo"
                 src={peragoImage2}
+<<<<<<< HEAD
                 className="h-[20%] w-[20%] p-5"
+=======
+                className='md:w-[15%] w-[30%] p-5'
+>>>>>>> e996896f599901cbe71e8c2ebacbef231ef1846e
               />
             </div>
             <div className="py-3">
@@ -145,12 +149,20 @@ const Shell = ({ children }) => {
                 </Text>
               </Box>
               <Box className="w-full flex md:w-1/3 justify-center">
+<<<<<<< HEAD
                 <div>
                   <Text>
                     <a href="tel:+251-911-231622">+251-911-231622</a>{" "}
                     <a href="tel:+251(114)701998">+251(114)701998</a>{" "}
                   </Text>
                 </div>
+=======
+                {/* <div>
+
+                  <Text>
+                  <a href="tel:+251-911-231622">+251-911-231622</a>  <a href="tel:+251(114)701998">+251(114)701998</a> </Text>
+                </div> */}
+>>>>>>> e996896f599901cbe71e8c2ebacbef231ef1846e
               </Box>
               <Box className="flex justify-center w-full md:w-1/3">
                 <Text>Po.Box: 139 Addis Ababa, Ethiopia</Text>
