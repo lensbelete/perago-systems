@@ -49,15 +49,14 @@ const RequestDemo = () => {
     <Container size="md" className="h-screen">
       <Card
         shadow="sm"
-        className="p-32 pt-4 h-screen  mt-1 "
+        className="p-8 sm:p-32 pt-4 h-screen mt-1"
         radius="md"
         withBorder
         style={{ backgroundColor: "#f0f0f0" }}
-  
       >
         <Card
           shadow="sm"
-          className="p-10 mt-1 overflow-y-scroll"
+          className="p-4 sm:p-10 mt-1 overflow-y-scroll"
           radius="md"
           withBorder
         >
@@ -76,9 +75,9 @@ const RequestDemo = () => {
                     backgroundColor: form.errors.fullName
                       ? "#ffe4e4"
                       : "transparent",
-                    width: "300px",
                   },
                 }}
+                className="w-full sm:w-[300px]"
               />
             </Group>
 
@@ -93,9 +92,9 @@ const RequestDemo = () => {
                     backgroundColor: form.errors.companyName
                       ? "#ffe4e4"
                       : "transparent",
-                    width: "300px",
                   },
                 }}
+                className="w-full sm:w-[300px]"
               />
             </Group>
 
@@ -110,16 +109,16 @@ const RequestDemo = () => {
                     backgroundColor: form.errors.email
                       ? "#ffe4e4"
                       : "transparent",
-                    width: "300px",
                   },
                 }}
+                className="w-full sm:w-[300px]"
               />
             </Group>
 
-            <Group mt="lg" mb="xl" style={{ alignItems: "flex-end" }}>
+            <Group mt="lg" mb="xl" className="flex flex-col sm:flex-row">
               <TextInput
                 withAsterisk
-                label="Phone Number"
+                label="Area Code"
                 placeholder="Area Code"
                 {...form.getInputProps("areaCode")}
                 styles={{
@@ -127,14 +126,14 @@ const RequestDemo = () => {
                     backgroundColor: form.errors.areaCode
                       ? "#ffe4e4"
                       : "transparent",
-                    width: "200px",
                   },
                 }}
+                className="w-full sm:w-[200px]"
               />
 
               <TextInput
                 withAsterisk
-                label=""
+                label="Phone Number"
                 placeholder="Phone Number"
                 {...form.getInputProps("phoneNumber")}
                 styles={{
@@ -142,9 +141,9 @@ const RequestDemo = () => {
                     backgroundColor: form.errors.phoneNumber
                       ? "#ffe4e4"
                       : "transparent",
-                    width: "200px",
                   },
                 }}
+                className="w-full sm:w-[200px] mt-4 sm:mt-0 sm:ml-4"
               />
             </Group>
 
@@ -160,10 +159,9 @@ const RequestDemo = () => {
                     backgroundColor: form.errors.helpMessage
                       ? "#ffe4e4"
                       : "transparent",
-                    width: "500px",
-                    height: "100px",
                   },
                 }}
+                className="w-full sm:w-[500px] h-[100px]"
               />
             </Group>
 
