@@ -82,15 +82,11 @@ const Shell = ({ children }) => {
                   }
                 }}
               />
-<<<<<<< HEAD
-            </Flex>
-=======
               
               
             
         
       </Flex>
->>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
             <Burger
               opened={opened}
               onClick={toggle}
@@ -102,16 +98,6 @@ const Shell = ({ children }) => {
           </div>
         </AppShell.Header>
 
-<<<<<<< HEAD
-        <AppShell.Main className="pl-0 pr-0 pt-20">{children}</AppShell.Main>
-
-        <AppShell.Footer
-          className="relative bg-green-600 h-[10%] shadow-md"
-          style={{ backgroundColor: "#55ba4a", color: "white" }}
-        >
-          <div className="flex-row justify-center pb-5 font-bold">
-            <div className="justify-center flex w-[100%] sm:w-[100%]">
-=======
         <AppShell.Main className='pl-0 pr-0 pt-20'>
         
             {children}
@@ -121,15 +107,10 @@ const Shell = ({ children }) => {
         <AppShell.Footer className='relative bg-green-600 h-[10%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
           <div className='flex-row justify-center pb-5 font-bold'>
             <div className='justify-center flex w-[100%] sm:w-[100%]'>
->>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
               <Image
                 alt='perago logo'
                 src={peragoImage2}
-<<<<<<< HEAD
-                className="md:w-[15%] w-[30%] p-5"
-=======
                 className='md:w-[15%] w-[30%] p-5'
->>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
               />
             </div>
             <div className='py-3'>
@@ -142,11 +123,7 @@ const Shell = ({ children }) => {
               <Box className="w-full flex md:w-1/3 justify-center">
                 {/* <div>
 
-<<<<<<< HEAD
-Lensa, [27/05/2024 1:06 PM]
-=======
 Lensa, [5/27/2024 1:06 PM]
->>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
 <Text>
                   <a href="tel:+251-911-231622">+251-911-231622</a>  <a href="tel:+251(114)701998">+251(114)701998</a> </Text>
                 </div> */}
