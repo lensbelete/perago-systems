@@ -17,7 +17,7 @@ const Shell = ({ children }) => {
         padding="md"
         withBorder={false}
       >
-        <AppShell.Header className='p-3 mb-10 shadow-md'>
+        <AppShell.Header className='p-3 mb-10'>
           <div className='flex w-screen items-center'>
             <div className='ml-10 mr-10'>
               <a href='/'>
