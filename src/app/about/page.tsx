@@ -8,7 +8,7 @@ const AboutUs = () => {
       <Title
         order={1}
         mb="lg"
-        style={{ color: "#55ba4f", fontWeight: "normal" }}
+        style={{ color: "#55ba4f", fontWeight: "normal", fontSize: "2.5rem" }}
         className="pt-1"
       >
         About Us
@@ -20,7 +20,11 @@ const AboutUs = () => {
         <Title
           order={3}
           mb="sm"
-          style={{ color: "#55ba4f", fontWeight: "normal", fontSize: "1.2rem" }}
+          style={{
+            color: "#55ba4f",
+            fontWeight: "normal",
+            fontSize: "1.1rem",
+          }}
           className="pt-6"
         >
           Who We Are
