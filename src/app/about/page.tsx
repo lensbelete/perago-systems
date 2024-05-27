@@ -92,7 +92,7 @@ const AboutUs = () => {
           justify={{ sm: "center" }}
           className="p-5"
         >
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -118,7 +118,7 @@ const AboutUs = () => {
               assurance at national and regional levels.
             </p>
           </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -147,7 +147,7 @@ const AboutUs = () => {
               processes.
             </p>
           </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -181,7 +181,7 @@ const AboutUs = () => {
           justify={{ sm: "center" }}
           className="p-5"
         >
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -208,7 +208,7 @@ const AboutUs = () => {
               project periods.
             </p>
           </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -234,7 +234,7 @@ const AboutUs = () => {
               solutions are put into service.
             </p>
           </div>
-          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-gray-50 rounded-lg shadow mx-auto">
+          <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
             <Title
               order={4}
               mb="sm"
@@ -265,6 +265,94 @@ const AboutUs = () => {
           </div>
         </Flex>
       </div>
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        gap={{ base: "sm", sm: "lg" }}
+        justify={{ sm: "center" }}
+        className="p-5"
+      >
+        <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+          <Title
+            order={4}
+            mb="sm"
+            style={{
+              color: "#55ba4f",
+              fontWeight: "normal",
+              fontSize: "1.0rem",
+            }}
+            className="pt-6"
+          >
+            Adaptation of technologies
+          </Title>
+
+          <hr className="border-gray-300 mb-4" />
+          <p
+            className="text-gray-600 text-lg leading-relaxed"
+            style={{
+              fontSize: "1.0rem",
+            }}
+          >
+            Fast adaptation of new technologies is the core of our business
+            strategy. We help our customers embrace the benefits of technology
+            to realize their business goals.
+          </p>
+        </div>
+        <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+          <Title
+            order={4}
+            mb="sm"
+            style={{
+              color: "#55ba4f",
+              fontWeight: "normal",
+              fontSize: "1.0rem",
+            }}
+            className="pt-6"
+          >
+            Knowledge Transfer
+          </Title>
+
+          <hr className="border-gray-300 mb-4" />
+          <p
+            className="text-gray-600 text-lg leading-relaxed"
+            style={{
+              fontSize: "1.0rem",
+            }}
+          >
+            We always work in close partnership with our customers from
+            requirement understanding to solution delivery. During all the
+            phases we make sure that we able to impart our knowledge to
+            customers.
+          </p>
+        </div>
+        <div className="flex-1 w-full md:max-w-[30%] p-6 bg-white rounded-lg shadow-none mx-auto">
+          <Title
+            order={4}
+            mb="sm"
+            style={{
+              color: "#55ba4f",
+              fontWeight: "normal",
+              fontSize: "1.0rem",
+            }}
+            className="pt-6"
+          >
+            Timely Delivery & Support after solution delivery
+          </Title>
+
+          <hr className="border-gray-300 mb-4" />
+          <p
+            className="text-gray-600 text-lg leading-relaxed"
+            style={{
+              fontSize: "1.0rem",
+            }}
+          >
+            To ensure long term successes, a high standing and solid reputation
+            in the marketplace are required. It is therefore a Perago standard
+            to deliver high quality products and services within budget and
+            time. We have the commitment to provide world class support service
+            to customers’ request.
+          </p>
+        </div>
+      </Flex>
     </div>
   );
 };
