@@ -49,6 +49,8 @@ const RequestDemo = () => {
     <Container size="md" className="h-screen">
       <Card
         shadow="sm"
+        className="p-10 mt-1 overflow-y-scroll"
+        radius="md"
         withBorder
         style={{ backgroundColor: "#f0f0f0" }}
         className="p-32 pt-3 h-screen "

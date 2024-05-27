@@ -4,7 +4,7 @@ import { Flex, Title } from "@mantine/core";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start pt-8">
+    <div className="min-h-screen flex flex-col items-center justify-start">
       <Title order={1} mb="sm" style={{ color: "green" }} className="pt-6">
         About Us
       </Title>

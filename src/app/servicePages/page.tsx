@@ -19,17 +19,17 @@ const Servicespage = () => {
   };
 
   return (
-    <div>
+    <div className="mb-12">
         
         <Tabs color="green" defaultValue="service">
-            <div className="p-10">
+            <div className="px-10 mx-10">
             <Tabs.List 
             style={{gap: "3%"}}>
-                <Tabs.Tab value="service"><Title order={4} className="text-semibold text-gray-500">Services</Title></Tabs.Tab>
-                <Tabs.Tab value="eprocure"><Title order={4} className="text-semibold text-gray-500">ePROCURE</Title></Tabs.Tab>
-                <Tabs.Tab value="eservice"><Title order={4} className="text-semibold text-gray-500">eSERVICES</Title></Tabs.Tab>
-                <Tabs.Tab value="engage"><Title order={4} className="text-semibold text-gray-500">ENGAGE</Title></Tabs.Tab>
-                <Tabs.Tab value="measure"><Title order={4} className="text-semibold text-gray-500">MEASURE</Title></Tabs.Tab>
+                <Tabs.Tab value="service"><Title order={4} className="text-sm text-gray-500">Services</Title></Tabs.Tab>
+                <Tabs.Tab value="eprocure"><Title order={4} className="text-sm text-gray-500">ePROCURE</Title></Tabs.Tab>
+                <Tabs.Tab value="eservice"><Title order={4} className="text-sm text-gray-500">eSERVICES</Title></Tabs.Tab>
+                <Tabs.Tab value="engage"><Title order={4} className="text-sm text-gray-500">ENGAGE</Title></Tabs.Tab>
+                <Tabs.Tab value="measure"><Title order={4} className="text-sm text-gray-500">MEASURE</Title></Tabs.Tab>
             </Tabs.List>
             </div>
       
