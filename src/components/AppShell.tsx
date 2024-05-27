@@ -1,41 +1,31 @@
-"use client";
-import {
-  AppShell,
-  NavLink,
-  Flex,
-  Burger,
-  Drawer,
-  Box,
-  Text,
-  Group,
-  Anchor,
-} from "@mantine/core";
-import Image from "next/image";
-import {
-  IconGauge,
-  IconHome,
-  IconSettings,
-  IconCalendar,
-  IconMail,
-} from "@tabler/icons-react";
-import peragoImage from "../assets/perago2.png";
-import peragoImage2 from "../assets/perago-white.png";
-import { useDisclosure } from "@mantine/hooks";
+"use client"
+import { AppShell, NavLink, Flex, Burger, Drawer, Box, Text, Group, Anchor } from '@mantine/core';
+import Image from 'next/image';
+import { IconGauge, IconHome, IconSettings, IconCalendar, IconMail } from '@tabler/icons-react';
+import peragoImage from "../assets/perago2.png"
+import peragoImage2 from "../assets/perago-white.png"
+import { useDisclosure } from '@mantine/hooks';
 
 const Shell = ({ children }) => {
   const [opened, { toggle, close }] = useDisclosure();
 
   return (
     <>
-      <AppShell header={{ height: 70 }} padding="md" withBorder={false}>
-        <AppShell.Header className="p-3 ">
-          <div className="flex w-screen items-center">
-            <div className="ml-10 mr-10">
-              <a href="/">
+      <AppShell
+        header={{ height: 70 }}
+    
+
+        padding="md"
+        withBorder={false}
+      >
+        <AppShell.Header className='p-3 '>
+          <div className='flex w-screen items-center'>
+            <div className='ml-10 mr-10'>
+              <a href='/'>
                 <Image
                   width="150"
                   height={40}
-                  alt="Perago logo"
+                  alt='Perago logo'
                   src={peragoImage}
                 />
               </a>
@@ -49,54 +39,58 @@ const Shell = ({ children }) => {
               <NavLink
                 href="/"
                 label="Home"
-                leftSection={
-                  <IconHome size="1.5rem" stroke={1.5} color="#55ba4a" />
-                }
-                color="#55ba4a"
+                leftSection={<IconHome size="1.5rem" stroke={1.5} color='#55ba4a'/>}
+                color='#55ba4a'
                 styles={{
                   label: {
-                    fontSize: "1rem",
-                  },
+                    fontSize: '1rem', 
+                  }
                 }}
               />
               <NavLink
                 href="/about"
                 label="About Us"
-                leftSection={
-                  <IconGauge size="1.5rem" stroke={1.5} color="#55ba4a" />
-                }
-                color="#55ba4a"
+                leftSection={<IconGauge size="1.5rem" stroke={1.5} color='#55ba4a'/>}
+                color='#55ba4a'
                 styles={{
                   label: {
-                    fontSize: "1rem",
-                  },
+                    fontSize: '1rem', 
+                  }
                 }}
               />
               <NavLink
                 href="/servicePages"
                 label="Services"
-                color="#55ba4a"
-                leftSection={
-                  <IconSettings size="1.5rem" stroke={1.5} color="#55ba4a" />
-                }
+                color='#55ba4a'
+                leftSection={<IconSettings size="1.5rem" stroke={1.5} color='#55ba4a' />}
                 styles={{
                   label: {
-                    fontSize: "1rem",
-                  },
+                    fontSize: '1rem',
+                   
+                  }
                 }}
               />
               <NavLink
                 href="/contactUs"
                 label="Contact Us"
-                color="#55ba4a"
-                leftSection={<IconCalendar size="1.5rem" color="#55ba4a" />}
+                color='#55ba4a'
+                leftSection={<IconCalendar size="1.5rem" color='#55ba4a' />}
                 styles={{
                   label: {
-                    fontSize: "1rem",
-                  },
+                    fontSize: '1rem',
+                    
+                  }
                 }}
               />
+<<<<<<< HEAD
             </Flex>
+=======
+              
+              
+            
+        
+      </Flex>
+>>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
             <Burger
               opened={opened}
               onClick={toggle}
@@ -108,6 +102,7 @@ const Shell = ({ children }) => {
           </div>
         </AppShell.Header>
 
+<<<<<<< HEAD
         <AppShell.Main className="pl-0 pr-0 pt-20">{children}</AppShell.Main>
 
         <AppShell.Footer
@@ -116,26 +111,42 @@ const Shell = ({ children }) => {
         >
           <div className="flex-row justify-center pb-5 font-bold">
             <div className="justify-center flex w-[100%] sm:w-[100%]">
+=======
+        <AppShell.Main className='pl-0 pr-0 pt-20'>
+        
+            {children}
+  
+        </AppShell.Main>
+        
+        <AppShell.Footer className='relative bg-green-600 h-[10%] shadow-md' style={{ backgroundColor: '#55ba4a', color: 'white' }}>
+          <div className='flex-row justify-center pb-5 font-bold'>
+            <div className='justify-center flex w-[100%] sm:w-[100%]'>
+>>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
               <Image
-                alt="perago logo"
+                alt='perago logo'
                 src={peragoImage2}
+<<<<<<< HEAD
                 className="md:w-[15%] w-[30%] p-5"
+=======
+                className='md:w-[15%] w-[30%] p-5'
+>>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
               />
             </div>
-            <div className="py-3">
-              <Text className="text-center">Perago Information Systems</Text>
+            <div className='py-3'>
+            <Text className='text-center'>Perago Information Systems</Text>
             </div>
             <div className="flex flex-row flex-wrap justify-center items-center">
               <Box className="flex w-full md:w-1/3 justify-center">
-                <Text>
-                  Email:{" "}
-                  <a href="mailto:email@example.com">Info@peragosystems.com</a>
-                </Text>
+              <Text>Email: <a href="mailto:email@example.com">Info@peragosystems.com</a></Text>
               </Box>
               <Box className="w-full flex md:w-1/3 justify-center">
                 {/* <div>
 
+<<<<<<< HEAD
 Lensa, [27/05/2024 1:06 PM]
+=======
+Lensa, [5/27/2024 1:06 PM]
+>>>>>>> 65c412fa2bbec3687a13ef970af8e84357c23603
 <Text>
                   <a href="tel:+251-911-231622">+251-911-231622</a>  <a href="tel:+251(114)701998">+251(114)701998</a> </Text>
                 </div> */}
@@ -158,36 +169,34 @@ Lensa, [27/05/2024 1:06 PM]
           href="/"
           label="Home"
           leftSection={<IconHome size="1rem" stroke={1.5} color="#55ba4a" />}
-          color="#55ba4a"
+          color='#55ba4a'
           onClick={close}
         />
         <NavLink
           href="/about"
           label="About Us"
           leftSection={<IconGauge size="1rem" stroke={1.5} color="#55ba4a" />}
-          color="#55ba4a"
+          color='#55ba4a'
           onClick={close}
         />
         <NavLink
           href="/service"
           label="Services"
-          color="#55ba4a"
-          leftSection={
-            <IconSettings size="1rem" stroke={1.5} color="#55ba4a" />
-          }
+          color='#55ba4a'
+          leftSection={<IconSettings size="1rem" stroke={1.5} color="#55ba4a" />}
           onClick={close}
         />
         <NavLink
           href="/contactUs"
           label="Contact Us"
-          color="#55ba4a"
+          color='#55ba4a'
           leftSection={<IconCalendar size="1rem" color="#55ba4a" />}
           onClick={close}
         />
         <NavLink
           href="/requestDemo"
           label="Request Demo"
-          leftSection={<IconMail color="#55ba4a" size="1rem" stroke={1.5} />}
+          leftSection={<IconMail color='#55ba4a' size="1rem" stroke={1.5} />}
           onClick={close}
         />
       </Drawer>
