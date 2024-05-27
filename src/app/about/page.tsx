@@ -4,7 +4,7 @@ import { Flex, Title } from "@mantine/core";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start container mx-auto">
+    <div className="flex flex-col items-center justify-start container mx-auto">
       <Title
         order={1}
         mb="sm"
@@ -14,14 +14,14 @@ const AboutUs = () => {
         About Us
       </Title>
 
-      <div className="w-full flex justify-center mb-1">
+      <div className="w-screen flex justify-center mb-1">
         <Image
           src={peragoLogo}
           className="w-screen"
           alt="perago logo for about page"
         />
       </div>
-      <div className="px-14 bg-gray-100">
+      <div className="w-screen px-14 bg-gray-100">
         <Title
           order={3}
           mb="sm"
