@@ -31,17 +31,3 @@ body {
     text-wrap: balance;
   }
 }
-.carousel-indicators.active {
-  background-color: #42a5f5; /* Your desired color for active indicator */
-}
-.carousel-indicators li {
-  background-color: #42a5f5; /* Your desired color for active indicator */
-  outline: solid 2px black;
-  fill: black;
-}
-
-
-
-.mantine-AppShell-main {
-  margin-bottom: 0 !important;
-}

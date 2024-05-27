@@ -1,5 +1,5 @@
 "use client"
-import { AppShell, NavLink, Flex, Burger, Drawer, Box, Text } from '@mantine/core';
+import { AppShell, NavLink, Flex, Burger, Drawer, Box, Text, Group, Anchor } from '@mantine/core';
 import Image from 'next/image';
 import { IconGauge, IconHome, IconSettings, IconCalendar, IconMail } from '@tabler/icons-react';
 import peragoImage from "../assets/perago2.png"
@@ -12,12 +12,12 @@ const Shell = ({ children }) => {
   return (
     <>
       <AppShell
-        header={{ height: 80 }}
+        header={{ height: 70 }}
 
         padding="md"
         withBorder={false}
       >
-        <AppShell.Header className='p-3 mb-10'>
+        <AppShell.Header className='p-3 '>
           <div className='flex w-screen items-center'>
             <div className='ml-10 mr-10'>
               <a href='/'>
@@ -33,19 +33,16 @@ const Shell = ({ children }) => {
               direction="row"
               justify="space-between"
               align="center"
-              gap="lg"
-              className="hidden md:flex"
+              className="hidden md:flex w-[60%] gap-0"
             >
               <NavLink
                 href="/"
                 label="Home"
-                style={{ width: '200px' }}
                 leftSection={<IconHome size="1.5rem" stroke={1.5} color='#55ba4a'/>}
                 color='#55ba4a'
                 styles={{
                   label: {
-                    fontSize: '1.1rem', 
-                    width: "3%",
+                    fontSize: '1rem', 
                   }
                 }}
               />
@@ -56,7 +53,7 @@ const Shell = ({ children }) => {
                 color='#55ba4a'
                 styles={{
                   label: {
-                    fontSize: '1.1rem', width: "3%",
+                    fontSize: '1rem', 
                   }
                 }}
               />
@@ -67,8 +64,8 @@ const Shell = ({ children }) => {
                 leftSection={<IconSettings size="1.5rem" stroke={1.5} color='#55ba4a' />}
                 styles={{
                   label: {
-                    fontSize: '1.1rem',
-                    width: "3%",
+                    fontSize: '1rem',
+                   
                   }
                 }}
               />
@@ -79,8 +76,8 @@ const Shell = ({ children }) => {
                 leftSection={<IconCalendar size="1.5rem" color='#55ba4a' />}
                 styles={{
                   label: {
-                    fontSize: '1.1rem',
-                    width: "3%", 
+                    fontSize: '1rem',
+                    
                   }
                 }}
               />
@@ -90,12 +87,15 @@ const Shell = ({ children }) => {
                 leftSection={<IconMail color='#55ba4a' size="1.5rem" stroke={1.5} />}
                 styles={{
                   label: {
-                    fontSize: '1.1rem',
-                    width: "25%", 
+                    fontSize: '1rem',
+                    
                   }
                 }}
               />
-            </Flex>
+              
+            
+        
+      </Flex>
             <Burger
               opened={opened}
               onClick={toggle}
