@@ -1,4 +1,3 @@
-Lensa, [5/27/2024 1:06 PM]
 "use client"
 import { AppShell, NavLink, Flex, Burger, Drawer, Box, Text, Group, Anchor } from '@mantine/core';
 import Image from 'next/image';
