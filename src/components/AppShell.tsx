@@ -96,18 +96,6 @@ const Shell = ({ children }) => {
                   },
                 }}
               />
-              <NavLink
-                href="/requestDemo"
-                label="Request Demo"
-                leftSection={
-                  <IconMail color="#55ba4a" size="1.5rem" stroke={1.5} />
-                }
-                styles={{
-                  label: {
-                    fontSize: "1rem",
-                  },
-                }}
-              />
             </Flex>
             <Burger
               opened={opened}
@@ -123,7 +111,7 @@ const Shell = ({ children }) => {
         <AppShell.Main className="pl-0 pr-0 pt-20">{children}</AppShell.Main>
 
         <AppShell.Footer
-          className="relative bg-green-600 h-[30%] shadow-md"
+          className="relative bg-green-600 h-[10%] shadow-md"
           style={{ backgroundColor: "#55ba4a", color: "white" }}
         >
           <div className="flex-row justify-center pb-5 font-bold">
@@ -131,11 +119,7 @@ const Shell = ({ children }) => {
               <Image
                 alt="perago logo"
                 src={peragoImage2}
-<<<<<<< HEAD
-                className="h-[20%] w-[20%] p-5"
-=======
-                className='md:w-[15%] w-[30%] p-5'
->>>>>>> e996896f599901cbe71e8c2ebacbef231ef1846e
+                className="md:w-[15%] w-[30%] p-5"
               />
             </div>
             <div className="py-3">
@@ -149,20 +133,12 @@ const Shell = ({ children }) => {
                 </Text>
               </Box>
               <Box className="w-full flex md:w-1/3 justify-center">
-<<<<<<< HEAD
-                <div>
-                  <Text>
-                    <a href="tel:+251-911-231622">+251-911-231622</a>{" "}
-                    <a href="tel:+251(114)701998">+251(114)701998</a>{" "}
-                  </Text>
-                </div>
-=======
                 {/* <div>
 
-                  <Text>
+Lensa, [27/05/2024 1:06 PM]
+<Text>
                   <a href="tel:+251-911-231622">+251-911-231622</a>  <a href="tel:+251(114)701998">+251(114)701998</a> </Text>
                 </div> */}
->>>>>>> e996896f599901cbe71e8c2ebacbef231ef1846e
               </Box>
               <Box className="flex justify-center w-full md:w-1/3">
                 <Text>Po.Box: 139 Addis Ababa, Ethiopia</Text>
