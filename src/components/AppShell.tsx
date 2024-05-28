@@ -135,8 +135,6 @@ const Shell = ({ children }) => {
               <Box className="w-full flex md:w-1/3 justify-center">
                 {/* <div>
 
-Lensa, [5/27/2024 1:06 PM]
-<Text>
                   <a href="tel:+251-911-231622">+251-911-231622</a>  <a href="tel:+251(114)701998">+251(114)701998</a> </Text>
                 </div> */}
               </Box>
